@@ -1,3 +1,11 @@
+# Videos
+data/
+data/videos/
+videos/
+video_frames/
+video_pyscenedet/
+video_scenecutex/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
