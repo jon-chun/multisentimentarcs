@@ -1,4 +1,6 @@
-# Open-Source AI, LLM, LMM, Multimodal AI, Affective AI, Sentiment Analysis, Narrative, Storytelling
+#  MultiSentimentArcs: A Novel Method to Visualize Multimodal AI Sentiment Arcs in Long-Form Narratives
+
+### Open-Source AI, LLM, LMM, Multimodal AI, Affective AI, Sentiment Analysis, Narrative, Storytelling
 
 ## Abstract 
 
