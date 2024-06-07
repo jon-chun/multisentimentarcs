@@ -7,7 +7,7 @@ import pandas as pd
 
 # Set up logging to both terminal and the generated log file
 current_time = datetime.now().strftime("%Y%m%d_%H%M")
-log_file = os.path.join("..", "data", f"keyframe_extraction_{current_time}.log")
+log_file = os.path.join("..", "data", f"scene_extraction_{current_time}.log")
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     handlers=[
@@ -30,8 +30,8 @@ PARTIAL_VIDEO_PERCENTAGE = 10
 PARTIAL_MIN_SCENE_COUNT = MIN_SCENE_COUNT / (100 / PARTIAL_VIDEO_PERCENTAGE)
 PARTIAL_MAX_SCENE_COUNT = MAX_SCENE_COUNT / (100 / PARTIAL_VIDEO_PERCENTAGE)
 MIN_SCENE_FILE_KB = 2
-CSV_FILE_PATH = os.path.join("..", "data", "keyframes", "scene_threshold_and_count.csv")
-HISTORY_FILE_PATH = os.path.join("..", "data", "keyframes", "scenedetect_history.csv")
+CSV_FILE_PATH = os.path.join("..", "data", "scenes", "scene_threshold_and_count.csv")
+HISTORY_FILE_PATH = os.path.join("..", "data", "scenes", "scenedetect_history.csv")
 
 # Initialize DataFrame
 columns = ["filename", "size", "scene_count", "threshold"]
@@ -281,11 +281,12 @@ def main():
     input_dir_base_path = os.path.join("..", "data", "videos")
     logging.info(f"Input directory base path: {input_dir_base_path}")
 
-    output_dir_base_path = os.path.join("..", "data", "keyframes")
+    # output_dir_base_path = os.path.join("..", "data", "scenes")
+    output_dir_base_path = os.path.join("..", "data", "scenes")
     logging.info(f"Output directory base path: {output_dir_base_path}")
 
     try:
-        if not SELECTED_VIDEOS_LIST:
+        if len(SELECTED_VIDEOS_LIST) > 0:
             leaf_dirs = find_leaf_directories(input_dir_base_path)
         else:
             leaf_dirs = [os.path.join(input_dir_base_path, partial_path.strip("/")) for partial_path in SELECTED_VIDEOS_LIST]
