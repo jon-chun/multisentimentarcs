@@ -24,14 +24,25 @@ significantly advance the field of Digital Humanities by giving non-AI experts a
 engage in human-in-the-loop research around Affective AI and human-AI alignment. Code, results,
 and non-copyrighted data will be available at https://github.com/jon-chun/multisentimentarcs.
 
-![Royal Wedding Transcript Sentiment Arcs](./data/transcripts_plots/musical/Royal_Wedding_1951_sma10_plot.png)
+
+| ![Roydl Wedding Video Sentiment Arcs](/data/transcripts_plots/musical/Royal_Wedding_1951_sma10_plot.png) | 
+|:--:| 
+| *Royal Wedding (1951) Transcript Sentiment Arcs* |
 
 
 | ![Roydl Wedding Transcript Sentiment Arcs](/data/transcripts_plots/musical/Royal_Wedding_1951_sma10_plot.png) | 
 |:--:| 
 | *Royal Wedding (1951) Transcript Sentiment Arcs* |
 
-![royal Wedding Transcript KDE Plot](./data/transcripts_plots/musical/Royal_Wedding_1951_kde_plot.png)
+
+| ![Roydl Wedding Video Sentiment KDE Distribution](/data/transcripts_plots/musical/Royal_Wedding_1951_kde_plot.png) | 
+|:--:| 
+| *Royal Wedding (1951) Video Sentiment KDE Distribution* |
+
+| ![Roydl Wedding Transcript Sentiment KDE Distribution](/data/transcripts_plots/musical/Royal_Wedding_1951_kde_plot.png) | 
+|:--:| 
+| *Royal Wedding (1951) Video Sentiment KDE Distribution* |
+
 
 ### NOTE:
 This repo is in the process of being cleaned-up and reorganized. Please be patient  
