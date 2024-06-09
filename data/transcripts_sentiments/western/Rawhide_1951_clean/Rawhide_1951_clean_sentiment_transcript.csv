@@ -1,0 +1,895 @@
+text,start,duration,time_midpoint,vader,textblob,llama3
+yes sir that's it,87.84,3.919,89.79950000000001,0.4019,0.0,0.4
+the overland mail,89.759,5.881,92.6995,0.0,0.0,0.4
+san francisco to st louis in 25 days,91.759,8.801,96.1595,0.0,0.0,0.7
+2700 miles in 25 days and 25 nights when,95.64,7.159,99.2195,0.0,0.0,0.7
+the weather and engines behave,100.56,4.08,102.6,0.0,0.0,0.2
+a lot farther and longer when they,102.799,3.36,104.479,0.0,0.0,0.3
+people said it couldn't be done,106.159,4.721,108.5195,0.0,0.0,0.8
+they laughed and called it the jackass,108.479,3.761,110.3595,0.0516,0.09999999999999998,-0.7
+but when mail and passengers in gold,112.24,5.6,115.04,0.0,0.0,0.5
+began coming through from california day,115.439,5.201,118.0395,0.0,0.0,0.7
+in day out the whole country sat up and,117.84,4.559,120.1195,0.0,0.2,0.4
+took notice,120.64,4.0,122.64,0.0,0.0,0.4
+san francisco to singapore,122.399,4.801,124.7995,0.0,0.0,0.5
+the shortest fastest back-breakingest,124.64,5.44,127.36,0.0,0.0,0.6
+ride you could buy for 200 gold,127.2,4.88,129.64,0.0,0.0,0.6
+meals included,130.08,5.8,132.98000000000002,0.0,0.0,0.6
+yes sir that's it the jackass made,132.08,10.64,137.4,-0.0258,-0.5,-0.7
+this is the relay station at rawhide,142.72,4.96,145.2,0.0,0.0,0.3
+pass one of many strung along the 2700,144.879,4.08,146.91899999999998,0.0,0.5,0.4
+here while a fresh team of mules was,148.959,3.36,150.639,0.3182,0.3,0.2
+hitched to the stage the driver and,150.56,3.679,152.3995,0.0,0.0,0.4
+passengers could wash have some food and,152.319,3.681,154.15949999999998,0.0,0.0,0.4
+go on to the next station many miles,154.239,2.881,155.6795,0.0,0.25,0.2
+don't go to tom it ain't been no picnic,157.12,3.44,158.84,0.2235,0.0,-0.7
+for me neither,159.2,4.0,161.2,0.0,0.0,-0.7
+i'm just getting new skinner ways,160.56,4.319,162.7195,0.0,0.13636363636363635,0.6
+that don't include no bonus for learning,163.2,3.119,164.7595,0.3333,0.0,-0.7
+you the business,164.879,3.921,166.8395,0.0,0.0,0.4
+i've known your old man for 40 years and,166.319,4.481,168.5595,0.0,0.1,0.2
+we're nothing too tough for him that's,168.8,3.519,170.5595,0.0951,-0.3888888888888889,-0.7
+why when he cracks the whip men and,170.8,3.6,172.60000000000002,0.0,0.0,0.4
+mules just lay back their ears and take,172.319,3.28,173.95899999999995,0.0,0.0,0.2
+but if any man was to talk to him the,175.599,3.201,177.1995,0.0,0.0,0.2
+way i'm talking to you,177.28,3.12,178.84,0.0,0.0,0.4
+he'd poke both fish right in their,178.8,4.6,181.1,0.0,0.2857142857142857,-0.7
+well can't you even talk back,185.2,3.6,187.0,0.2732,0.0,0.4
+trouble you you you just don't listen,192.72,4.239,194.8395,-0.4019,-0.2,-0.7
+here i've been trying for five six,195.44,2.799,196.8395,0.0,0.0,0.2
+months to learn you the business and,196.959,3.601,198.7595,0.0,0.0,0.2
+you're you're still shaving taking a,198.239,3.681,200.0795,0.0,0.0,-0.7
+it's no wonder their mules don't take to,201.92,4.16,204.0,-0.296,0.0,0.2
+you kindly,203.84,3.52,205.6,0.4939,0.6,0.7
+what's your old man gonna think of me if,207.36,3.28,209.0,0.0,0.1,0.4
+i send you back looking just as much of,209.12,5.119,211.6795,0.0,0.1,0.4
+a dude as when you first come out here,210.64,3.599,212.4395,0.0,0.25,0.3
+well don't got it can't you say,214.4,2.96,215.88,0.2732,0.0,-0.7
+bugle's floyd,218.64,3.92,220.6,0.0,0.0,0.3
+uh that's a trouble you get me so riled,220.56,6.28,223.7,-0.4019,-0.2,-0.7
+up i can't even attend the business,222.56,4.28,224.7,0.0,0.0,-0.7
+try him again billy,230.159,2.961,231.6395,0.0,0.0,0.7
+i'll do it like i learned she then come,237.68,5.08,240.22,0.3612,0.0,0.4
+on help me their mules,239.12,3.64,240.94,0.4019,0.0,0.4
+hello you're still here in the center of,298.96,3.92,300.92,0.0,-0.1,0.2
+civilization tom i won't be much longer,300.8,4.64,303.12,0.0,0.2,0.7
+mr scott i finally got my pardon,302.88,4.48,305.12,0.3182,0.0,-0.7
+well you're going back east huh yes sir,305.44,2.8,306.84,0.5859,0.0,0.2
+he hadn't have earned the business yet,309.199,4.521,311.4595,0.0,0.0,-0.7
+what's the baby's name is old,343.52,3.84,345.44,0.0,0.1,-0.5
+i never hear that name before short for,348.4,5.92,351.36,0.0,0.0,0.2
+california sam born there wasn't she,350.4,6.16,353.48,0.0,0.0,-0.7
+placerville in a mining camp that's,354.32,3.04,355.84,0.0,0.0,0.6
+poor little thing and stuff,357.36,5.04,359.88,-0.4767,-0.29375,0.5
+it's tough to be born anywhere,359.52,4.799,361.9195,-0.128,-0.3888888888888889,-0.4
+a little more coffee this hole no thank,362.4,4.16,364.48,-0.2755,0.15625,-0.7
+you and please stop calling me mrs holt,364.319,3.44,366.039,0.0258,0.0,-0.7
+a little yes coffee mr sleed,379.199,3.361,380.8795,0.3415,-0.1875,0.4
+this stuff tastes like burnt corn boiled,382.56,4.32,384.72,0.3612,0.0,-0.7
+and branched water could be we don't run,384.8,3.839,386.7195,0.0,0.0,-0.7
+no fancy hotel here,386.88,3.36,388.56,-0.296,0.0,-0.7
+they couldn't get it down with a swig of,388.639,3.521,390.3995,0.0,-0.15555555555555559,-0.7
+whiskey back wherever you came from i'll,390.24,3.36,391.92,0.0,0.0,-0.7
+bet you were glad to get a drink out of,392.16,4.479,394.3995000000001,0.4588,0.5,0.4
+a sluice box it didn't cost 200 gold it,393.6,4.64,395.92,0.0,0.0,0.4
+didn't that's the price of the stage,396.639,3.441,398.3595,0.0,0.0,0.2
+ticket mr slade the company throws the,398.24,5.2,400.84,0.0,0.0,0.4
+food in extra you call left food,400.08,7.88,404.02,0.0,0.0,0.2
+you boy here seems to like it,403.44,4.52,405.7,0.3612,0.0,0.7
+mule boy doesn't,409.36,4.72,411.72,0.0,0.0,-0.7
+but as eaters starve so i i eat just,411.12,5.44,413.84,-0.5927,0.0,-0.7
+wait till i get back to missouri i'm,414.08,4.399,416.2795,0.0,0.0,0.4
+gonna take it up with a fella and raise,416.56,3.759,418.4395,0.0,0.0,0.4
+hob with him whoever's running this year,418.479,4.641,420.7995,0.0,0.0,0.6
+company looks like trouble for ojc,420.319,4.16,422.399,-0.0516,-0.2,-0.7
+jc can take care of any trouble that,423.12,5.04,425.64,0.128,-0.2,0.7
+comes his way who's jc j.c owens his,424.479,4.961,426.9595,0.0,0.0,0.2
+father superintendent of the eastern,428.16,3.039,429.6795,0.0,0.0,0.5
+division i'll give you his address and,429.44,3.28,431.08,0.0,0.0,0.4
+said joel you'll throw in a couple of,431.199,5.161,433.7795,0.0,0.0,-0.7
+complaints from me,432.72,3.64,434.54,-0.4019,0.0,0.4
+you just pulled in from the west half,465.52,2.959,466.9995,0.0,-0.16666666666666666,0.3
+you didn't by any chance see four men on,468.479,3.761,470.3595,-0.1877,0.0,0.4
+the road nope who are you looking for,470.24,4.56,472.52,0.0,0.0,0.4
+lieutenant fella named zimmerman,472.24,4.88,474.68,0.0,0.0,-0.7
+ray zimmerman yeah i thought they had,474.8,4.32,476.96,0.296,0.0,0.4
+him in prison over at huntsville broke,477.12,4.32,479.28,-0.7269,0.0,-0.7
+out the day before he's due to get home,479.12,4.479,481.3595,0.0,-0.125,0.2
+him and three others,481.44,4.319,483.5995,0.0,0.0,0.2
+you didn't see him did you todd no i,483.599,4.241,485.7195,-0.296,0.0,0.2
+don't order neither figure they crossed,485.759,4.72,488.119,0.0,0.0,-0.7
+over into mexico now they're after gold,487.84,4.799,490.2395,0.0,0.0,0.4
+lots of it found that out of la masia,490.479,4.081,492.5195,0.0,0.0,0.5
+where they held up johnny madden's stage,492.639,3.68,494.479,0.0,0.0,0.2
+johnny drove through here just yesterday,494.56,4.4,496.76,0.0,0.0,0.4
+that's right too much damage plenty kill,496.319,5.521,499.0795,-0.836,0.24285714285714285,-0.7
+johnny madden johnny man hill yeah,498.96,4.32,501.12,0.296,0.0,0.7
+we're here to give you escort as far as,501.84,3.6,503.64,0.0,0.1,0.4
+llamas see ya if you're ready to go i'm,503.28,3.759,505.1595,0.3612,0.2,0.7
+ready to go all right but i got a,505.44,5.52,508.2,0.1901,0.24285714285714285,0.4
+responsibility my passengers,507.039,3.921,508.9995,0.0,0.0,0.7
+you and little callie will have to stay,512.64,3.759,514.5195,0.0,-0.1875,-0.7
+here miss old why company rule that's,514.0,5.039,516.5195,-0.1531,0.1,0.4
+right man company ruled my foot i paid,516.399,4.481,518.6395,0.0,0.2857142857142857,-0.7
+my fare it took all the money i could,519.039,4.24,521.159,0.0,0.0,-0.7
+scrape up i won't do it i'm sorry it's a,520.88,4.16,522.96,-0.0772,-0.5,-0.7
+company rule not to risk the lives of,523.279,2.721,524.6395,0.2057,0.0,-0.7
+if you're bent on going i can't stop you,526.0,4.88,528.44,0.2235,0.0,0.4
+but you'll have to leave the baby behind,528.72,3.679,530.5595000000001,-0.0772,-0.4,-0.7
+that's one responsibility i'm not,530.88,4.0,532.88,0.0,0.0,-0.7
+allowed to take leave callie behind,532.399,6.641,535.7195,-0.0516,-0.4,0.3
+jibber-jabber that's up to you man,534.88,6.16,537.96,0.0,0.0,0.3
+here you take your thing he'll do,539.04,4.56,541.3199999999999,0.0,0.0,0.3
+nothing of the kind i'm not staying here,541.04,5.28,543.68,-0.4168,0.6,-0.7
+afraid you are ma'am company rules,543.6,6.239,546.7195,0.0,-0.6,-0.7
+leave these things alone,546.32,3.519,548.0795,-0.296,0.0,-0.7
+you leave me and my things alone i'm,553.92,3.919,555.8795,-0.296,0.0,-0.7
+going in this stage coach and the baby's,556.16,4.72,558.52,0.0,0.0,0.3
+going with me stop her tom just try and,557.839,4.961,560.3195000000001,-0.296,0.0,0.3
+stop me i said stop her come on we'll,560.88,3.76,562.76,-0.5267,0.0,0.4
+grab her don't gonna grab her,562.8,3.44,564.52,0.0,0.0,0.7
+take your hands off me,566.24,4.08,568.28,0.0,0.0,-0.7
+i just got to get this ain't blue let me,568.16,4.96,570.64,0.0,0.0,0.4
+go i'm looking on that stage take your,570.32,5.92,573.2800000000001,0.0,0.0,0.4
+hands off me let me go you fool you'll,573.12,5.839,576.0395,-0.4404,0.0,-0.7
+make me lose my job hurry up gil get him,576.24,5.12,578.8,-0.4019,0.0,-0.7
+i hope you're happy with what you've,583.519,3.601,585.3195000000001,0.765,0.8,0.7
+done i'm sorry i hurt your arm thanks,585.12,3.839,587.0395,-0.2023,-0.15,0.3
+for not breaking it don't blame me ma'am,587.12,3.76,589.0,0.2584,0.0,-0.7
+i'm only a hired hand here you'll only,588.959,3.921,590.9195,0.4939,0.0,-0.7
+lose one day man you can go in on the,590.88,4.72,593.24,-0.4019,0.0,0.3
+stage tomorrow,592.88,2.72,594.24,0.0,0.0,0.2
+you take your things inside and i'll,598.16,4.92,600.62,0.0,0.0,0.4
+look after the mules,599.519,3.561,601.2995,0.0,0.0,0.2
+take it easy that's everything i own,609.36,5.159,611.9395000000001,0.4404,0.5166666666666666,-0.7
+what are you doing,638.16,4.239,640.2795,0.0,0.0,0.2
+i'm taking this room i'm sorry this is,640.079,6.76,643.459,-0.0772,-0.5,-0.7
+mine not tonight it isn't,642.399,4.44,644.619,0.0,0.0,-0.7
+what are you afraid of coyotes yeah the,677.04,5.2,679.64,0.296,-0.6,0.3
+kind with boots on,679.279,4.8,681.679,0.5267,0.6,0.7
+wait a minute,682.24,3.2,683.84,0.0,0.0,0.2
+is there someplace around here i can,684.079,2.721,685.4395,0.0,0.0,0.4
+take a bath,685.44,5.839,688.3595,0.0,0.0,0.2
+yeah the picture's full i said beth,686.8,4.479,689.0395,0.296,0.35,0.3
+you see that,696.56,2.56,697.8399999999999,0.0,0.0,0.2
+that what that sam is pumping water into,700.959,4.481,703.1995,0.0,0.0,0.2
+that's a horse trough,703.519,4.481,705.7595,0.0,0.0,-0.7
+well just don't use any soap the animals,705.44,3.839,707.3595,0.2732,0.0,-0.7
+don't like it,708.0,3.519,709.7595,-0.2755,0.0,-0.7
+is that where you take a bath,709.279,5.281,711.9195,0.0,0.0,0.2
+no don't you ever take a bath,711.519,5.281,714.1595,-0.296,0.0,-0.7
+now and again back in the canyon a hot,714.56,4.64,716.88,0.0,0.125,0.4
+spring that's more like it mind if i,716.8,3.839,718.7194999999999,0.4201,0.5,0.7
+borrow this,719.2,4.319,721.3595,0.0,0.0,0.2
+well it looks as if you already have,720.639,4.561,722.9195,0.2732,0.0,0.4
+you sure you know how to use it i've,723.519,4.56,725.799,0.3182,0.5,-0.7
+seen them around well here,725.2,4.48,727.44,0.2732,0.0,0.4
+in that case you might just as well take,728.079,3.841,729.9994999999999,0.2732,0.0,-0.7
+and you'll find my towel and my soap in,731.92,3.84,733.8399999999999,0.0,0.0,0.3
+have a nice bath,735.76,3.56,737.54,0.4215,0.6,0.2
+where is she going,746.0,3.12,747.56,0.0,0.0,0.7
+back in the canyon,747.68,2.88,749.12,0.0,0.0,0.4
+she's doing what you ought to do once in,749.12,4.0,751.12,0.0,0.0,0.5
+a while take a bath keep dry outside and,750.56,4.32,752.7199999999999,0.0,-0.033333333333333326,0.4
+wait inside that's what a man does in,753.12,4.92,755.58,0.0,0.0,0.4
+this country,754.88,3.16,756.46,0.0,0.0,0.4
+what's that,763.839,4.24,765.9590000000001,0.0,0.0,0.2
+you hear anything,765.44,2.639,766.7595,0.0,0.0,0.2
+no i don't hear anything where's your,769.2,7.48,772.94,-0.296,0.0,0.4
+gun what do you think she took it,770.839,5.841,773.7595,-0.34,0.0,-0.7
+what are you gonna do,803.44,3.12,805.0,0.0,0.0,0.2
+keep a beat on him you find out who it,804.88,3.01,806.385,0.0,0.0,0.4
+you the station keeper,830.639,4.161,832.7195,0.0,0.0,0.3
+no i just work here,832.56,4.8,834.9599999999999,-0.296,0.0,-0.7
+where's the boss,834.8,4.0,836.8,0.0,0.0,0.3
+oh he's around,837.36,4.27,839.495,0.0,0.0,0.4
+just the two of you work here,838.8,5.279,841.4395,0.0,0.0,0.7
+i guess you're wondering who i am huh,844.079,4.401,846.2795,0.0,0.0,0.2
+well there aren't many strangers come,846.88,5.04,849.4,0.2732,0.5,0.2
+along i've been wondering about you too,848.48,7.32,852.14,0.0,0.0,0.7
+but i guess you're all right,851.92,3.88,853.86,0.0,0.2857142857142857,0.4
+deputy sheriff miles from huntsville,859.199,4.561,861.4794999999999,0.0,0.0,-0.4
+owens is my,867.199,6.921,870.6595,0.0,0.0,0.5
+name all right sam you can come out now,868.839,5.281,871.4795,0.0,0.2857142857142857,0.7
+i hear they killed one of my best,886.88,3.759,888.7595,-0.0772,0.4,-0.7
+friends johnny man that's right ought to,888.48,3.84,890.4,0.4767,0.2857142857142857,0.6
+be shot down like a mad dog that,890.639,4.961,893.1195,-0.1779,-0.3902777777777778,-0.8
+zimmerman not a doubt about it,892.32,5.759,895.1995000000001,0.2755,0.0,0.8
+trooper said he's looking for gold just,895.6,3.81,897.505,0.0,0.0,0.4
+stand still todd,898.079,4.721,900.4395,0.0,0.0,0.2
+get your hands up,902.8,5.44,905.52,0.0,0.0,0.7
+get over against that wall,905.04,3.2,906.64,0.0,0.0,0.5
+now stay that way,915.199,3.88,917.139,0.0,0.0,-0.7
+hiya sheriff zimmerman,942.48,6.44,945.7,0.0,0.0,0.3
+keep him covered sure zim,944.399,4.521,946.6595,0.3182,0.5,0.4
+that everybody boss just them too don't,954.88,4.079,956.9195,0.0,0.0,0.4
+know for sure by golly it works just,957.12,3.68,958.96,0.3182,0.5,0.7
+like you've said ah we could have rode,958.959,4.481,961.1995,0.3612,0.0,0.4
+straight in take a look around outside,960.8,4.08,962.84,0.2263,0.1,0.3
+here take this,963.44,3.36,965.12,0.0,0.0,0.3
+we reckon that i'll be needing firearms,964.88,3.6,966.68,0.0,0.0,0.6
+boss take it put our horses in the,966.8,5.12,969.36,0.0,0.0,-0.7
+corral and hide the saddles,968.48,3.44,970.2,-0.1779,0.0,0.2
+take a look around for guns,972.72,3.28,974.36,0.0,0.0,0.4
+grass gossip,977.759,3.64,979.579,-0.1779,0.0,0.2
+all right todd owens turn around,990.16,5.16,992.74,0.0,0.2857142857142857,0.7
+listen zimmerman i'll do the talking i,996.32,4.4,998.52,0.0,0.0,0.6
+gotta say something,998.0,2.72,999.36,0.0,0.0,-0.7
+now i want answers,1001.839,4.481,1004.0795,0.0772,0.0,0.3
+and i want them right,1003.68,6.159,1006.7595,0.0772,0.2857142857142857,0.5
+what time's the next stage do you hear,1006.32,4.639,1008.6395,0.0,0.0,0.3
+what time tonight,1010.959,4.161,1013.0395,0.0,0.0,0.2
+about sundown what about the next stage,1015.12,3.6,1016.92,0.0,0.0,0.4
+from the west,1017.519,3.281,1019.1595,0.0,0.0,0.2
+that's tomorrow,1018.72,3.52,1020.48,0.0,0.0,0.4
+usually early morning,1022.24,6.079,1025.2795,0.0,0.1,0.4
+that right,1025.839,2.48,1027.079,0.0,0.2857142857142857,0.2
+i ask you is that right,1029.6,4.959,1032.0794999999998,0.0,0.2857142857142857,0.2
+know how much gold it's carrying,1034.559,4.201,1036.6595,0.0,0.2,0.4
+none that went through today,1041.919,3.681,1043.7595,0.0,0.0,0.2
+i don't like to be lied to,1050.64,4.399,1052.8395,-0.5733,0.0,-0.7
+the westbound stage is due here at eight,1053.2,3.359,1054.8795,0.0,-0.125,0.4
+o'clock tonight,1055.039,3.041,1056.5595,0.0,0.0,0.2
+the california stage comes through,1056.559,3.841,1058.4795,0.0,0.0,0.7
+tomorrow noon and it's carrying close to,1058.08,4.24,1060.1999999999998,0.0,0.0,0.4
+a hundred thousand dollars in gold bars,1060.4,3.68,1062.24,0.0,0.0,0.8
+consigned by the crocker mining company,1062.32,3.92,1064.28,0.0,0.0,0.2
+in sacramento to the government in wall,1064.08,3.839,1065.9995,0.0,0.0,0.3
+street new york,1066.24,3.76,1068.12,0.0,0.13636363636363635,0.7
+you both knew it because johnny madden,1067.919,6.921,1071.3795,0.0,0.0,0.5
+told you so yesterday hey show zimmerman,1070.0,4.84,1072.42,0.0,0.0,0.2
+you want to take me out to a barn dance,1084.4,4.399,1086.5995,0.0772,0.0,0.7
+where did you get those things,1086.4,5.12,1088.96,0.0,0.0,-0.5
+in there where is she look zimmerman,1088.799,4.641,1091.1195,0.0,0.0,0.2
+so she's yours,1095.039,4.081,1097.0795,0.0,0.0,0.4
+where is she,1097.039,4.321,1099.1995,0.0,0.0,-0.5
+where is she owns,1099.12,3.84,1101.04,0.0,0.0,0.2
+where's your wife,1101.36,5.319,1104.0195,0.0,0.0,-0.7
+i haven't got a wife,1102.96,3.719,1104.8195,0.0,0.0,-0.7
+he won't hand us no more lies,1153.919,3.601,1155.7195000000002,0.2228,-0.25,-0.8
+where was you zim,1157.84,4.16,1159.9199999999998,0.0,0.0,-0.7
+using my head,1159.84,5.199,1162.4395,0.0,0.0,0.6
+you ran out and left owens,1162.0,5.58,1164.79,0.0,0.0,-0.7
+where is he,1165.039,4.64,1167.359,0.0,0.0,0.3
+you what i uh should take care of him,1169.679,4.081,1171.7195000000002,0.4939,0.0,-0.5
+too if you had half a brain you'd know,1171.76,4.56,1174.04,0.0,-0.16666666666666666,-0.7
+owens sounds just like a baby girl,1176.84,8.32,1181.0,0.3612,0.0,0.7
+i ring tail monkey if i don't,1180.72,4.44,1182.94,0.0,-0.05,0.3
+look it is a baby,1193.52,15.63,1201.335,0.0,0.0,0.8
+those are the men the troopers were,1218.72,2.48,1219.96,0.0,0.0,0.4
+looking for,1219.919,3.12,1221.479,0.0,0.0,0.2
+why did they lock me in here they think,1221.2,4.8,1223.6,0.0,0.0,0.8
+you're my wife your wife that's right,1223.039,5.041,1225.5595,0.0,0.2857142857142857,-0.7
+what gave them that idea i don't know i,1226.0,4.96,1228.48,0.0,0.0,-0.7
+didn't say it it was their idea,1228.08,4.479,1230.3194999999998,0.0,0.0,-0.7
+did you tell them different they didn't,1230.96,3.68,1232.8,0.0,0.0,-0.7
+give me a chance well don't do it then,1232.559,3.441,1234.2795,0.4767,0.0,-0.7
+well it might save your skin and your,1236.0,4.159,1238.0795,0.6486,0.0,0.4
+babies how i don't know but as long as,1237.919,3.601,1239.7195000000002,0.0,-0.05,0.7
+they've made a mistake we might as well,1240.159,3.361,1241.8395,-0.0772,0.0,-0.7
+go along with it who's skinny are trying,1241.52,5.6,1244.32,0.0,0.0,-0.7
+to save ours are yours well mine too,1243.52,6.159,1246.5995,0.6486,0.0,0.7
+now listen here miss holt or mrs hold or,1247.12,4.16,1249.1999999999998,-0.1531,0.0,0.2
+whatever your name is,1249.679,3.441,1251.3995,0.0,0.0,-0.8
+those killers are after gold,1251.28,3.2,1252.88,-0.6486,0.0,0.2
+gold that's coming through tomorrow on,1253.12,3.36,1254.8,0.0,0.0,0.7
+the stage from california,1254.48,3.52,1256.24,0.0,0.0,0.4
+i don't know what's in their crazy heads,1256.48,3.6,1258.28,-0.34,-0.6,-0.7
+or what their scheme is but killing me,1258.0,3.36,1259.68,-0.7964,0.0,-0.7
+right away isn't part of it or they'd,1260.08,3.12,1261.64,0.0,0.2857142857142857,-0.7
+have done that by now what's all this,1261.36,3.04,1262.88,0.0,0.0,-0.7
+got to do with your telling them i'm,1263.2,3.599,1264.9995,0.0,0.0,-0.7
+your wife i told you i didn't tell them,1264.4,4.24,1266.52,0.0,0.0,0.7
+they just put two and two together,1266.799,3.601,1268.5995,0.0,0.0,0.4
+simple as that huh,1268.64,3.279,1270.2795,0.0,0.0,0.3
+you're not getting me mixed up in this,1270.4,2.639,1271.7195000000002,0.0,0.0,0.4
+i'm going out there and tell them i'm,1271.919,2.721,1273.2795,0.0,0.0,-0.7
+just a passenger on this line they're,1273.039,3.281,1274.6795,0.0,0.0,-0.7
+gonna rob all the stage coaches they,1274.64,3.519,1276.3995,-0.5574,0.0,-0.8
+want to but i'll do nothing to get,1276.32,3.44,1278.04,0.0387,0.0,-0.7
+callier me killed,1278.159,3.281,1279.7995,-0.6705,-0.2,-0.7
+you listen to me,1279.76,3.279,1281.3995,0.0,0.0,0.7
+your only chance of staying alive at,1281.44,3.04,1282.96,0.5574,0.05,0.5
+least as long as i do is to let them,1283.039,3.76,1284.919,0.0,-0.175,-0.7
+keep on thinking that you're my wife,1284.48,3.76,1286.36,0.0,0.0,0.3
+they need me,1286.799,3.12,1288.359,0.0,0.0,0.7
+the goal they want is on the eastbound,1288.24,3.28,1289.88,0.0772,0.0,0.3
+stage but it doesn't come through here,1289.919,2.961,1291.3995,0.0,0.0,0.4
+until tomorrow,1291.52,2.88,1292.96,0.0,0.0,0.2
+there's a westbound stage that goes,1292.88,3.039,1294.3995000000002,0.0,0.0,0.3
+through here tonight,1294.4,3.759,1296.2795,0.0,0.0,-0.7
+sam's dead they've got to keep me here,1295.919,3.521,1297.6795000000002,-0.6486,-0.2,0.4
+now you and the baby can stay alive just,1299.44,3.599,1301.2395,0.3818,0.1,0.7
+as long as i do,1301.36,3.439,1303.0794999999998,0.0,-0.05,0.7
+that's all i've got to say and you can,1303.039,5.241,1305.6595,0.0,0.0,0.2
+do what you like,1304.799,3.481,1306.5395,0.3612,0.0,0.7
+where'd you get this why do you think,1323.039,3.601,1324.8395,0.0,0.0,0.3
+todd was running for the stable that's,1324.96,4.719,1327.3195,0.296,0.0,0.2
+where sim find it by golly oh sow belly,1326.64,4.96,1329.12,0.0,0.0,0.7
+sure could have picked us off with this,1329.679,4.081,1331.7195000000002,0.3182,0.5,-0.7
+give it to graz he won't leave it lying,1331.6,3.84,1333.52,0.4449,0.0,0.7
+around where owens can get his hands on,1333.76,3.84,1335.68,0.0,0.0,0.3
+meaning you can't count on me,1340.32,6.0,1343.32,0.0,0.0,-0.7
+now let's get this straight i didn't,1343.84,4.48,1346.08,0.2789,0.2,-0.7
+pick any of you for this,1346.32,3.28,1347.96,0.0,0.0,-0.5
+you just happened to be there when i,1348.32,2.64,1349.64,0.0,0.0,0.3
+made my break,1349.6,3.04,1351.12,0.0,0.0,-0.8
+all right you're here,1350.96,4.0,1352.96,0.0,0.2857142857142857,0.5
+and that's my bad luck my colleague zim,1352.64,4.0,1354.64,-0.128,-0.6999999999999998,-0.7
+i don't do nothing oh it's not you he's,1354.96,3.12,1356.52,0.0,0.0,-0.7
+shooting at,1356.64,3.919,1358.5995,0.0,0.0,-0.7
+you gruts you're nothing but a a big,1358.08,5.44,1360.8,0.0,0.0,-0.7
+dumb coot that does anything he says,1360.559,7.12,1364.119,-0.5106,-0.375,-0.7
+you yancy you're a one-horse horse thief,1363.52,7.84,1367.44,-0.5267,0.0,-0.7
+it's me he's griping at,1367.679,3.681,1369.5195,0.0,0.0,-0.7
+the first thing to do is to get rid of,1372.559,2.961,1374.0395,0.0,0.25,-0.7
+todd's body,1373.84,3.839,1375.7595,0.0,0.0,0.4
+take care of it tevis,1375.52,5.519,1378.2795,0.4939,0.0,0.2
+you yancy give him a hand,1377.679,6.841,1381.0995,0.4939,0.0,0.6
+come on beanbelly,1381.039,3.481,1382.7795,0.0,0.0,0.7
+all right come out,1400.08,3.56,1401.86,0.0,0.2857142857142857,0.6
+you must forgive me he's just a big dumb,1415.12,3.12,1416.6799999999998,-0.296,-0.1875,-0.7
+yeah by gully what kind of an animal are,1418.24,3.679,1420.0795,0.296,0.6,0.3
+you letting them shoot down an unarmed,1420.24,3.919,1422.1995,-0.34,-0.15555555555555559,-0.8
+man kill or be killed he was heading for,1421.919,4.88,1424.3590000000002,-0.8807,-0.2,0.2
+that rifle,1424.159,2.64,1425.479,0.0,0.0,0.7
+where's your gun,1428.48,4.559,1430.7595,-0.34,0.0,0.4
+my what you're a vulgar you know what,1430.799,4.0,1432.799,0.0,-0.7,-0.7
+i'm talking about can't you see he,1433.039,2.801,1434.4395,0.0,0.0,-0.7
+hasn't any,1434.799,4.081,1436.8395,0.0,0.0,-0.5
+where's your revolver well sam had it,1435.84,4.4,1438.04,0.2732,0.0,-0.7
+you took it away from him don't you,1438.88,3.919,1440.8395,0.0,0.0,-0.7
+remember where's his gun he sent it to,1440.24,4.72,1442.6,-0.34,0.0,0.2
+tucson to have it fixed what was wrong,1442.799,3.441,1444.5195,-0.4767,-0.2,0.4
+the firing pin was broken,1446.24,3.36,1447.92,-0.6705,-0.4,-0.7
+that's a rotten thing to do,1455.039,4.361,1457.2195,-0.5106,0.0,-0.8
+put that body on a pack mule,1465.36,4.36,1467.54,0.0,0.0,-0.7
+travis has no respect for the dead and,1475.919,4.481,1478.1595000000002,-0.7817,-0.2,-0.7
+he just loves the living,1478.32,4.16,1480.4,0.5719,0.0,0.7
+why don't you let us bury him,1480.4,4.0,1482.4,0.0,0.0,0.3
+we won't run away we'd hate to get shot,1482.48,5.04,1485.0,-0.5719,-0.8,-0.7
+in the back go ahead it'll make you feel,1484.4,4.48,1486.64,0.0,0.0,0.7
+any better,1487.52,3.2,1489.12,0.4404,0.5,0.4
+i'll get the baby she's all right where,1488.88,3.6,1490.68,0.0,0.2857142857142857,0.7
+she is mrs owens,1490.72,4.079,1492.7595,0.0,0.0,0.4
+if you want to go with your husband go,1492.48,6.439,1495.6995,0.0772,0.0,0.6
+but the baby stays here,1494.799,4.12,1496.859,0.0,0.0,0.4
+go with him tell davis let him bury him,1501.039,6.921,1504.4995,0.0,0.0,-0.7
+yes him stay close,1503.76,4.2,1505.86,0.4019,0.0,0.7
+all right back to the station,1537.52,4.639,1539.8395,0.0,0.14285714285714285,0.6
+well maybe they want to say some words,1539.84,4.8,1542.24,0.34,0.0,0.2
+well let them get it over with you take,1542.159,4.321,1544.3195,0.2732,0.0,0.3
+that shovel and get going well it ain't,1544.64,6.36,1547.8200000000002,0.2732,0.0,-0.7
+fit to walk away i said get going,1546.48,4.52,1548.74,0.3612,0.4,0.7
+well go on go on say the words,1556.559,5.521,1559.3195,0.2732,0.0,0.7
+may the lord grant you everlasting rest,1560.159,4.4,1562.3590000000002,0.3612,0.0,0.4
+in peace come on what are you doing,1562.08,4.24,1564.1999999999998,0.5423,0.0,0.3
+preaching a sermon,1564.559,4.72,1566.919,0.0,-0.225,0.4
+where's my pistol,1566.32,2.959,1567.7995,0.0,0.0,0.6
+must be behind the water trough,1569.679,20.561,1579.9595000000002,0.0,-0.4,0.2
+just a minute,1602.72,2.64,1604.04,0.0,0.0,0.4
+now i want the next stage to come,1607.52,3.92,1609.48,0.0772,0.0,0.6
+through and no questions asked,1609.2,3.839,1611.1195,-0.296,0.0,0.7
+but they'll want to know where sam is,1611.44,3.76,1613.3200000000002,0.1154,0.0,0.2
+won't they and you'll tell them gone to,1613.039,5.201,1615.6395,0.0,0.0,-0.7
+tucson fort huma make up your own story,1615.2,5.04,1617.72,0.0,0.6,0.4
+but make it good so nobody gets,1618.24,4.319,1620.3995,0.5927,0.7,0.2
+suspicious,1620.24,3.84,1622.16,-0.3612,0.0,-0.7
+remember owens,1622.559,5.911,1625.5145,0.0,0.0,0.4
+you have two good reasons to be careful,1624.08,11.94,1630.05,0.5423,0.3,0.4
+company rules,1657.6,3.76,1659.48,0.0,0.0,-0.4
+they hadn't forced me to stay here i'd,1659.52,6.53,1662.785,0.357,-0.30000000000000004,-0.7
+be on my way to my job and we'd be safe,1661.36,6.96,1664.84,0.4404,0.5,0.7
+looks like we both missed being on the,1670.24,4.559,1672.5195,0.0772,0.0,0.4
+right stage,1672.08,2.719,1673.4395,0.0,0.2857142857142857,0.5
+where were you bound for,1677.039,4.161,1679.1195,0.0,0.0,0.4
+i was taking kelly to her father's folks,1681.2,4.959,1683.6795,0.0,0.0,0.5
+in independence,1683.279,2.88,1684.719,0.0,0.0,0.7
+where is her father he was killed in,1686.24,4.799,1688.6395,-0.6705,-0.2,-0.7
+gold run three months ago,1688.32,5.44,1691.04,0.0,0.0,0.6
+a mother too,1691.039,2.721,1692.3995,0.0,0.0,0.8
+kelly isn't my baby a mother genie was,1694.159,3.441,1695.8795,0.0,0.0,0.2
+what happened,1701.039,2.561,1702.3195,0.0,0.0,0.7
+we used to sing and dance on the,1705.919,3.521,1707.6795000000002,0.0,0.0,0.2
+mississippi river boats,1707.36,3.199,1708.9595,0.0,0.0,0.6
+fell in love with a gambler,1710.559,4.801,1712.9595,0.6369,0.5,0.4
+he got the gold fever you know wanted to,1713.279,3.681,1715.1195,0.0,0.0,0.7
+go out west,1715.36,3.679,1717.1995,0.0,0.0,0.6
+she wouldn't go without me,1716.96,3.439,1718.6795,0.0,0.0,0.7
+so we went,1719.039,3.491,1720.7845,0.0,0.0,0.4
+from mining camp to mining,1720.399,3.441,1722.1194999999998,0.0,0.0,0.4
+jeannie was pretty johnny her husband,1723.84,3.92,1725.8,0.4939,0.25,0.4
+hot tempered and jealous,1727.76,4.159,1729.8395,-0.4588,0.25,0.7
+every time a man so much as gave jeannie,1730.0,3.84,1731.92,0.0,0.2,0.7
+a smile there'd be a brawl,1731.919,4.161,1733.9995,0.3612,0.3,0.4
+one night a drunken claim jumper took a,1733.84,3.68,1735.6799999999998,0.0,0.0,-0.7
+fancy tour,1736.08,4.56,1738.36,0.0,0.0,0.6
+when the shooting was over i was alone,1737.52,5.039,1740.0395,-0.25,0.0,0.7
+i kept on working,1742.559,2.961,1744.0395,0.0,0.0,-0.7
+saved up enough money to get us back,1745.52,3.8,1747.42,0.4215,0.0,0.7
+and you end up in this mess,1752.08,3.28,1753.72,-0.4357,-0.175,-0.7
+i could get my hands on a pistol,1757.12,7.869,1761.0545,0.0,0.0,0.6
+just watching owens like you told me to,1771.679,6.0,1774.679,0.3612,0.0,0.7
+keep away from her,1775.12,5.84,1778.04,0.0,0.0,-0.7
+well i ain't been cured of women yet,1777.679,6.0,1780.679,0.2732,0.0,0.4
+ain't had your medicines in,1780.96,4.88,1783.4,0.0,0.0,-0.7
+now let's get one thing straight owens,1783.679,3.761,1785.5595,0.2263,0.2,-0.7
+will take orders from us just as long as,1785.84,3.04,1787.36,0.0,-0.05,0.4
+he thinks that's the only way he'll safe,1787.44,3.68,1789.28,0.4404,0.25,-0.7
+his wife and kid you start anything and,1788.88,6.44,1792.1,0.0,0.0,-0.7
+the whole thing blows up in our faces,1791.12,4.2,1793.2199999999998,0.0,0.2,-0.8
+where did you get that coat oh oh well i,1805.279,3.841,1807.1995,0.2732,0.0,0.3
+it's just he took it from that fancy,1809.12,4.159,1811.1995,0.0,0.0,0.3
+pants passenger he took a whole carpet,1810.96,4.24,1813.08,0.0,0.2,0.2
+bag full take it off,1813.279,3.841,1815.1995,0.0,0.35,0.2
+ah well it's kind of take it off and,1815.2,3.28,1816.84,0.2732,0.6,0.4
+yes bury it get it all out of sight,1818.48,3.36,1820.16,0.4019,0.0,-0.7
+don't you realize there's a whole,1820.559,2.801,1821.9595,0.0,0.2,-0.7
+stagecoach full of people coming through,1821.84,3.439,1823.5595,0.0,0.35,0.6
+here soon can't you get that through,1823.36,4.24,1825.48,0.0,0.0,-0.7
+your simple heads i'm sorry boss i i,1825.279,6.321,1828.4395,-0.0772,-0.25,-0.7
+misfigured it well bury it,1827.6,4.0,1829.6,0.2732,0.0,-0.7
+take it off,1832.64,3.48,1834.38,0.0,0.0,-0.5
+couldn't bed me down,1866.64,4.159,1868.7195,0.0,-0.15555555555555559,-0.7
+in a one-horse town,1868.559,6.081,1871.5995,0.0,0.0,-0.7
+with the whole wide world out there,1870.799,8.88,1875.239,0.0,0.05,0.7
+a giant striker's five foot wide and it,1874.64,9.08,1879.18,0.0,-0.05,0.7
+takes me everywhere,1879.679,4.041,1881.6995,0.0,0.0,0.8
+usually does if you don't wind it,1907.919,4.401,1910.1195,0.0,-0.25,0.4
+what time is it by your watch i can tell,1909.919,5.621,1912.7295,0.0,0.0,0.3
+you if i had it,1912.32,6.289,1915.4645,0.0,0.0,0.7
+what time is it by his watch,1927.279,3.201,1928.8795,0.0,0.0,0.3
+let's see now,1930.48,3.039,1931.9995,0.0,0.0,0.2
+just uh nine o'clock straight up,1933.519,4.721,1935.8795,0.2263,0.2,0.2
+you've got any idea what's holding up,1946.32,3.359,1947.9995,0.0,0.0,-0.5
+that stage coach,1947.919,2.801,1949.3195,0.0,0.0,0.3
+well does it often come in so late,1950.72,4.16,1952.8,0.2732,-0.3,-0.7
+sometimes they don't get in at all,1954.88,4.56,1957.16,0.0,0.0,-0.7
+well what do you mean by that,1956.96,5.04,1959.48,0.2732,-0.3125,0.2
+johnny madden stage never got in did it,1959.44,5.2,1962.04,0.0,0.0,0.4
+boss boss look she she likes it she's,1962.0,5.36,1964.68,0.4215,0.0,-0.7
+she's singing,1964.64,2.72,1966.0,0.0,0.0,0.7
+put your baby to bed,1974.399,3.441,1976.1195,0.0,0.0,0.4
+she sure sings pretty ma'am,1983.36,4.28,1985.5,0.6705,0.375,0.7
+i'll call you when the stage comes,1994.799,4.281,1996.9395,0.0,0.0,0.4
+have you thought of something yes,2017.919,4.36,2020.099,0.4019,0.0,0.4
+try to get this to the stagecoach driver,2038.559,3.921,2040.5195,0.0,0.0,0.3
+but be careful don't take any chances,2040.24,3.679,2042.0795,0.0031,-0.1,-0.7
+they'll be watching us every minute and,2042.48,2.559,2043.7595,0.0,0.0,-0.7
+i'll shoot down everyone if anything,2043.919,3.201,2045.5195,-0.34,-0.15555555555555559,0.8
+goes wrong i'll try to get one to him,2045.039,2.961,2046.5195,-0.4767,-0.5,0.2
+keep you at the door,2048.0,3.639,2049.8195,0.0,0.0,-0.7
+a rolly holy old one,2072.96,3.84,2074.88,0.0,0.1,0.4
+what's that i keep your pants on nancy,2078.8,6.24,2081.92,0.0,0.0,0.4
+it's just a lucky old coyote singing to,2082.32,6.12,2085.38,0.4215,0.21666666666666667,0.4
+his sweetheart,2085.04,3.4,2086.74,0.6486,0.0,0.8
+she coming i think,2108.24,3.76,2110.12,0.0,0.0,0.4
+yeah my golly that's it that's it all,2112.4,2.959,2113.8795,0.296,0.0,0.7
+you know what to do justin,2115.359,3.441,2117.0795,0.0,0.0,0.7
+don't worry about me dancing,2118.96,3.879,2120.8995,0.3412,0.0,0.7
+all right come on out both of you,2138.0,4.52,2140.26,0.0,0.2857142857142857,0.7
+what's he going to do he'll look after,2145.92,4.159,2147.9995,0.0,0.0,0.3
+now go with them,2150.8,4.319,2152.9595000000004,0.0,0.0,0.5
+now wait a minute zimmerman will be all,2155.119,3.841,2157.0395000000003,0.0,0.0,0.4
+just as long as you don't make any,2157.599,3.281,2159.2395,0.0,-0.05,-0.7
+mistakes why can't i stay here with my,2158.96,4.72,2161.32,-0.3612,0.0,-0.7
+husband because i don't want you here,2160.88,6.0,2163.88,-0.0572,0.0,-0.7
+you don't trust no woman gurley,2163.68,6.32,2166.84,-0.2057,0.0,-0.7
+go on mrs owens,2166.88,3.12,2168.44,0.0,0.0,0.4
+go ahead grabs,2171.52,3.2,2173.12,0.0,0.0,0.7
+now remember,2181.2,3.84,2183.12,0.0,0.0,0.5
+all grotz and tevas have to hear is one,2182.64,4.959,2185.1195,0.0,0.0,0.8
+shot now grab that lantern and look,2185.04,4.96,2187.52,0.0,0.0,0.4
+get your hands off,2197.359,3.681,2199.1995,0.0,0.0,-0.7
+that i thought you wanted that,2198.839,3.641,2200.6595,0.0,0.0,0.3
+stagecoach to go through with no,2201.04,3.28,2202.68,-0.296,0.0,0.7
+questions asked well they won't even,2202.48,4.24,2204.6,0.2732,0.0,-0.7
+come in if they don't hear me blow this,2204.32,4.0,2206.32,0.0,0.0,0.7
+all right go ahead,2206.72,5.639,2209.5395,0.0,0.2857142857142857,0.7
+but they better come in,2208.32,4.039,2210.3395,0.5927,0.5,0.5
+oh kitty everything's all right,2244.079,6.401,2247.2795,0.0,0.2857142857142857,0.7
+your mama's just just gone for a walk,2246.56,7.76,2250.44,0.0,0.0,0.2
+uncle nancy take care of you,2250.48,3.84,2252.4,0.4939,0.0,0.7
+go to sleep now,2255.359,3.201,2256.9595,0.0,0.0,0.2
+that's right,2258.8,4.4,2261.0,0.0,0.2857142857142857,0.7
+go to sleep,2260.079,3.121,2261.6395,0.0,0.0,0.2
+and when you grow up kitty,2263.359,3.601,2265.1595,0.0,0.0,0.7
+never never,2266.96,4.879,2269.3995,0.0,0.0,-0.8
+steal a horse,2268.8,3.039,2270.3195,-0.4939,0.0,-0.7
+i think that'll fit all right,2292.119,6.041,2295.1395,0.3612,0.34285714285714286,0.7
+get it on there,2295.44,2.72,2296.8,0.0,0.0,0.7
+uh congrats,2312.079,4.641,2314.3995,0.5267,0.0,-0.7
+you uh stay back where you can see them,2314.4,3.54,2316.17,0.0,0.0,0.6
+howdy tom hey tex hi luke howdy tom,2358.079,5.441,2360.7995,0.0,0.0,0.4
+where's sam,2365.28,5.839,2368.1995,0.0,0.0,0.2
+uh tucson tucson,2367.28,3.839,2369.1995,0.0,0.0,0.2
+yeah he he had to go have his tooth,2372.16,4.4,2374.36,0.296,0.0,0.3
+pulled his face well clear out to here,2373.76,5.359,2376.4395000000004,0.5719,0.10000000000000002,0.4
+it's kind of unusual ain't it old sam,2376.56,4.4,2378.76,0.0,0.3,0.3
+leaving here alone with them outlaws on,2379.119,6.0,2382.119,-0.25,0.0,-0.7
+the loose he's not exactly alone,2380.96,4.159,2383.0395,-0.1431,-0.10096153846153846,-0.7
+i guess i better introduce myself,2389.28,3.68,2391.1200000000003,0.4404,0.5,0.2
+deputy sheriff miles,2394.24,3.52,2396.0,0.0,0.0,0.4
+huntsville,2396.48,2.879,2397.9195,0.0,0.0,0.4
+oh i thought it was kind of funny the,2397.76,2.96,2399.24,0.3832,0.425,0.4
+old sam would,2399.359,3.521,2401.1195,0.0,0.1,0.7
+go off and leave tom here alone,2400.72,4.0,2402.72,-0.296,0.0,-0.7
+you know short-handed no sign of them,2402.88,4.239,2404.9995,-0.296,0.0,-0.7
+outlaws yet nope say you're kind of late,2404.72,4.8,2407.12,0.0,0.15,0.2
+tonight aren't you yeah i made us wait,2407.119,4.0,2409.119,-0.2235,0.0,-0.7
+up but i'm gonna see it till gil scott,2409.52,3.12,2411.08,0.0,0.0,0.7
+drove in just wanted to make sure we,2411.119,3.921,2413.0795000000003,0.3182,0.5,0.2
+wouldn't run into no trouble,2412.64,3.679,2414.4795,0.3089,0.1,0.7
+i'm gonna give you a hand with the team,2415.04,3.76,2416.92,0.4939,0.0,0.7
+tom no i'll help him,2416.319,4.961,2418.7995,-0.5358,0.0,0.5
+i'm much obliged say your face looks,2418.8,4.559,2421.0795000000003,0.0,0.2,0.4
+kind of familiar sheriff it does to a,2421.28,3.52,2423.0400000000004,0.0,0.4875,0.5
+lot of people,2423.359,3.201,2424.9595,0.0,0.0,0.6
+say you better go on inside tom's got,2424.8,4.0,2426.8,0.4404,0.5,0.4
+bacon beans and coffee on the stove oh,2426.56,4.799,2428.9595,0.0,0.0,0.7
+good good come on luke come on folks,2428.8,4.88,2431.24,0.7003,0.7,0.7
+let's eat good i'm ready,2431.359,4.881,2433.7995,0.6597,0.44999999999999996,0.7
+it's better here,2433.68,2.56,2434.96,0.4404,0.5,0.7
+certainly glad to get in here,2436.48,3.359,2438.1595,0.6597,0.5,0.7
+all right go ahead,2448.88,3.56,2450.6600000000003,0.0,0.2857142857142857,0.6
+you know how long it's been since i seen,2481.76,5.2,2484.36,0.0,-0.05,-0.7
+a pretty face gurley,2484.16,5.04,2486.68,0.4939,0.25,0.7
+two long years,2489.2,3.36,2490.88,0.0,-0.05,-0.7
+that jug they had me in up in huntsville,2492.64,5.52,2495.4,0.0,0.0,0.3
+didn't have no window,2495.76,4.96,2498.24,0.2235,0.0,-0.7
+i could hear the laughing and the,2498.16,4.56,2500.44,0.4939,0.0,0.4
+music from the dance hall across the,2500.72,4.399,2502.9195,0.0,0.0,0.5
+once i even got a whiff of perfumey,2505.28,5.28,2507.92,0.0,0.0,0.4
+like yours,2508.64,4.16,2510.72,0.3612,0.0,0.6
+but i couldn't see,2510.56,3.92,2512.52,0.0,0.0,-0.7
+not for two long years,2514.48,5.0,2516.98,0.0,-0.05,-0.5
+see tom i keep thinking this funny thing,2533.119,3.761,2534.9995000000004,0.5228,0.25,0.7
+sam would go off and leave you alone,2535.2,3.119,2536.7595,-0.296,0.0,-0.7
+couldn't you yank that tooth for him,2536.88,3.52,2538.6400000000003,0.0,0.0,-0.7
+well luke i told todd i'd stick here,2538.319,3.841,2540.2395,0.2732,0.0,0.4
+until he got back,2540.4,4.24,2542.52,0.0,0.0,0.4
+i could use some more coffee tom sort of,2542.16,4.56,2544.44,0.0,0.5,0.7
+left tom here in your custody sheriff,2544.64,4.56,2546.92,0.0,0.0,-0.7
+yeah that's about the size of it thanks,2546.72,5.119,2549.2795,0.6249,0.2,0.7
+you sure i ain't seen you someplace,2556.0,4.72,2558.36,0.3182,0.5,0.3
+before sheriff,2557.839,2.881,2559.2795,0.0,0.0,0.3
+ever been to huntsville nope,2562.0,3.9,2563.95,0.0,0.0,-0.7
+not inside,2564.88,3.68,2566.7200000000003,0.0,0.0,-0.7
+i hear it's a pretty tough place not,2568.56,5.279,2571.1995,0.4019,-0.06944444444444445,-0.7
+tough enough to hold that fellow's own,2570.48,5.119,2573.0395,-0.128,0.07037037037037036,0.6
+you don't know him sheriff,2573.839,4.401,2576.0395,0.0,0.0,-0.7
+i was in huntsville the same time he was,2575.599,5.201,2578.1995,0.0,0.0,0.2
+well i'd be glad to get some first-hand,2580.8,3.84,2582.7200000000003,0.6249,0.5,0.7
+information mr fickerts with the new,2582.96,4.32,2585.12,0.0,0.13636363636363635,0.4
+york herald oh yes horace greeley's,2584.64,4.959,2587.1195,0.4019,0.0,0.7
+newspaper i haven't seen one in a long,2587.28,4.16,2589.36,0.0,-0.05,-0.7
+time i'm making this trip to right up,2589.599,4.161,2591.6795,0.0,0.2857142857142857,0.7
+the overland mail i'm almost sorry we,2591.44,3.84,2593.36,-0.0018,-0.5,0.3
+didn't meet up with that gang you're,2593.76,4.0,2595.76,0.0,0.0,-0.7
+after make good copy oh please don't say,2595.28,4.559,2597.5595000000003,0.6369,0.7,-0.7
+here with us yeah yeah man but this,2600.24,5.119,2602.7995,0.296,0.0,0.4
+zimmerman cold proposition isn't he,2602.24,5.359,2604.9195,0.0,-0.6,-0.7
+a pretty tough huckleberry,2605.359,4.161,2607.4395,0.4019,-0.06944444444444445,0.6
+what's he look like,2607.599,4.321,2609.7595,0.3612,0.0,0.2
+oh he's about my height,2609.52,4.559,2611.7995,0.0,0.0,0.3
+maybe a little more a little less,2611.92,3.84,2613.84,0.0,-0.010416666666666664,0.2
+smooth shaven,2614.079,3.441,2615.7995,0.0,0.4,0.2
+straight nose,2615.76,3.92,2617.7200000000003,0.2263,0.2,0.4
+hair and eyes about my color i heard he,2617.52,4.319,2619.6795,0.0,0.0,0.2
+came from a pretty high tone family was,2619.68,3.84,2621.6,0.4939,0.20500000000000002,0.7
+going big guns in the banking business,2621.839,4.0,2623.839,0.0,0.0,0.4
+until he met that woman,2623.52,3.68,2625.36,0.0,0.0,0.3
+well that's been rumored that way oh,2627.2,3.6,2629.0,0.2732,0.0,0.2
+it's the truth,2629.28,3.92,2631.24,0.3182,0.0,0.8
+she was a creole gal from new orleans,2630.8,4.72,2633.1600000000003,0.0,0.13636363636363635,0.7
+and a plenty good looker,2633.2,5.28,2635.84,0.4404,0.7,0.7
+her name was uh was uh,2635.52,4.64,2637.84,0.0,0.0,-0.7
+what was what business are you traveling,2638.48,3.839,2640.3995,0.0,0.0,0.2
+for mr tickering colts hartford,2640.16,4.8,2642.56,0.0,0.0,0.3
+connecticut just one more question what,2642.319,4.241,2644.4395,0.0,0.5,-0.7
+crime were they going to hang the woman,2644.96,3.84,2646.88,-0.5423,0.0,0.2
+he killed this creole gal because she,2650.079,3.28,2651.719,-0.6705,-0.2,-0.7
+was double dealing him for some other,2651.76,2.88,2653.2000000000003,0.0,-0.0625,0.4
+young buckle,2653.359,2.801,2654.7595,0.0,0.1,-0.7
+killed him too,2654.64,3.52,2656.4,-0.6705,-0.2,-0.8
+shot him both dead,2656.16,3.919,2658.1195,-0.6486,-0.2,-0.8
+not right sheriff,2658.16,4.32,2660.32,0.0,-0.14285714285714285,-0.7
+well from what he told me,2660.079,4.24,2662.199,0.2732,0.0,0.2
+they had it coming to him you almost,2662.48,4.8,2664.88,0.0,0.0,-0.7
+sound as if you admired him,2664.319,4.8,2666.719,0.5106,0.4,0.7
+never underestimate your enemy mr,2667.28,3.44,2669.0,0.5773,0.0,0.4
+it's a good way to keep alive,2670.72,3.44,2672.44,0.6705,0.39999999999999997,0.7
+very interesting do you mind if i quote,2672.64,3.679,2674.4795,0.4576,0.65,0.7
+you no not at all just so you spell my,2674.16,4.32,2676.32,-0.296,0.0,0.7
+name right,2676.319,4.0,2678.319,0.0,0.2857142857142857,0.6
+i hear colts getting out some new army,2678.48,3.44,2680.2,0.0,0.13636363636363635,0.4
+models that's what i'm taking to,2680.319,3.441,2682.0395,0.0,0.0,0.7
+california uh,2681.92,3.6,2683.7200000000003,0.0,0.0,0.7
+sheriff miles,2683.76,3.44,2685.48,0.0,0.0,0.4
+slickest line of guns you ever see sure,2688.56,3.68,2690.4,0.3818,0.5,0.7
+uh show them to him mr chickering i'll,2690.72,3.04,2692.24,0.0,0.0,0.2
+be glad to,2692.24,4.0,2694.24,0.4588,0.5,0.7
+oh tom wanna have a look at a hometown,2696.88,5.199,2699.4795,0.0,0.0,0.4
+newspaper it ain't but 12 days old,2699.2,5.879,2702.1395,0.0,0.1,0.4
+what do you think,2706.4,2.719,2707.7595,0.0,0.0,0.2
+i was way ahead of anything i've ever,2707.599,3.041,2709.1195,0.0,0.0,0.8
+good balance,2710.64,5.88,2713.58,0.4404,0.7,0.7
+yes nice smooth action,2712.48,4.04,2714.5,0.6705,0.3666666666666667,0.7
+wouldn't want to sell this one would you,2718.0,5.599,2720.7995,-0.0572,0.0,-0.7
+i should say not they're my samples,2720.16,5.84,2723.08,0.0,0.0,-0.7
+i see that jared,2723.599,6.281,2726.7395,0.0,0.0,0.2
+well it's mighty slick,2726.0,3.88,2727.94,0.2732,0.07500000000000001,0.7
+no no i reckon it was just a coyote run,2748.079,4.321,2750.2395,0.2235,0.0,0.2
+through the corral well folks time we,2750.319,4.881,2752.7595,0.2732,0.0,0.6
+got moving again,2752.4,2.8,2753.8,0.0,0.0,0.6
+did you have my revolver why i gave it,2758.4,4.0,2760.4,0.0,0.0,-0.7
+didn't i lay it on the table,2762.4,5.52,2765.1600000000003,0.0,0.0,0.4
+well i i don't see it,2764.319,3.601,2766.1195,0.2732,0.0,-0.7
+here it is right where mr davis left us,2768.16,4.88,2770.6,0.0,0.14285714285714285,-0.7
+thank you sheriff come on folks,2770.72,3.599,2772.5195,0.3612,0.0,0.7
+get your gear together we've got a long,2773.04,3.84,2774.96,0.0,-0.05,0.3
+ride ahead,2774.319,2.561,2775.5995,0.0,0.0,0.7
+well nice to have seen you sheriff,2779.2,4.48,2781.44,0.5994,0.6,0.6
+thanks same to you,2780.8,2.88,2782.24,0.4404,0.1,0.7
+stage is waiting tom,2785.2,3.96,2787.18,0.0,0.0,0.4
+what kind of a fool do you think i am,2845.599,5.601,2848.3995,-0.4404,0.6,-0.7
+trying to swipe that salesman's gun,2847.44,3.76,2849.32,-0.34,0.0,-0.7
+i don't want to have to kill you,2854.16,5.679,2856.9995,-0.7115,0.0,-0.7
+unless you make me do it,2856.319,3.52,2858.079,0.0,0.0,-0.7
+everything all right sim,2860.96,3.119,2862.5195,0.0,0.2857142857142857,0.7
+i kelly i want link,2864.24,3.2,2865.84,0.0772,0.0,-0.7
+where's my my wife,2868.88,4.239,2870.9995,0.0,0.0,0.3
+she coming with tennis,2871.04,4.559,2873.3195,0.0,0.0,0.6
+tim you can't travis knows better than,2873.119,7.561,2876.8995,-0.3412,0.5,-0.7
+to lay a hand on her now get in there,2875.599,5.081,2878.1395,0.4939,0.0,0.8
+take him inside yes,2897.52,3.88,2899.46,0.4019,0.0,0.7
+nancy go with him,2907.119,5.161,2909.6995,0.0,0.0,0.4
+think i had two boss,2908.559,3.721,2910.4195,0.0,0.0,0.2
+spit cat ain't she,2917.2,3.119,2918.7595,0.0,0.0,0.5
+here it is,2926.88,4.8,2929.28,0.0,0.0,0.3
+wanna bust my hand get up now look don't,2931.68,6.399,2934.8795,0.4939,0.0,0.2
+get any wrong ideas,2935.2,4.96,2937.68,-0.4767,-0.5,-0.7
+i warned you tevus,2938.079,6.48,2941.319,-0.2732,0.0,-0.7
+i'll i'll kill you for this get up,2940.16,4.399,2942.3595,-0.6908,0.0,0.8
+you wouldn't kick me if i if i had my,2947.2,5.159,2949.7795,0.0,0.0,0.7
+you'd like me to reach for it,2958.48,5.32,2961.14,0.3818,0.0,0.7
+wouldn't you,2960.48,3.32,2962.14,0.0,0.0,0.2
+well i don't know i had it and somehow,2985.599,4.641,2987.9195,0.2732,0.0,0.2
+or other it fell out,2987.28,2.96,2988.76,0.0,-0.125,-0.7
+do you still have yours haven't you i,2990.72,3.92,2992.68,0.0,0.0,-0.5
+yes i better get rid of it,2997.119,6.03,3000.134,0.6808,0.5,-0.7
+do you think they'll let us go tomorrow,3003.599,4.0,3005.599,0.0,0.0,0.6
+morning after the stagecoach gets here,3005.04,3.76,3006.92,0.0,0.0,0.3
+not a chance,3007.599,3.52,3009.3590000000004,-0.1877,0.0,-0.7
+they know that we saw them kill sam,3008.8,6.84,3012.2200000000003,-0.6908,0.0,-0.8
+i'll have to get out before it comes in,3011.119,4.521,3013.3795,0.0,0.0,-0.7
+nancy you stand watch till midnight,3042.319,4.721,3044.6795,0.0,0.0,0.4
+yancey yeah,3045.52,3.839,3047.4395,0.296,0.0,0.7
+her joy are you sure,3047.04,3.44,3048.76,0.7269,0.65,0.4
+you take the second watch yeah i see,3050.48,7.079,3054.0195,0.296,0.0,0.7
+davis will relieve you at four,3053.359,4.2,3055.459,0.3612,0.0,0.6
+can i fill this,3089.52,6.52,3092.78,0.0,0.0,0.7
+yeah go ahead,3092.4,3.64,3094.2200000000003,0.296,0.0,0.2
+get your water over there,3103.92,6.84,3107.34,0.0,0.0,0.3
+on drinking water,3106.88,3.88,3108.82,0.0,0.0,0.7
+can't you pour it in,3146.0,3.96,3147.98,0.0,0.0,0.3
+you better get some sleep,3188.24,3.879,3190.1795,0.4404,0.5,-0.7
+let me bury my coat,3203.28,4.2,3205.38,0.0,0.0,-0.7
+take his place yes,3249.359,4.72,3251.719,0.4019,0.0,0.2
+well there was there was,3252.559,3.441,3254.2795,0.2732,0.0,0.7
+a great big lion out there,3254.079,4.641,3256.3995,0.6249,0.4,0.7
+you better turn in too,3260.8,5.44,3263.52,0.4404,0.5,0.4
+it's your turn next,3263.2,3.04,3264.72,0.0,0.0,0.7
+what was cold out there too was it was,3266.96,5.44,3269.68,0.0,-0.6,0.2
+it made me very much,3269.839,5.361,3272.5195,0.0,0.26,0.8
+it was cold,3272.4,2.8,3273.8,0.0,-0.6,-0.5
+there was a lion out there too i,3276.559,4.081,3278.5995000000003,0.0,0.0,0.4
+seen it that was,3278.96,4.96,3281.44,0.0,0.0,0.2
+following me right up to the house,3280.64,3.28,3282.28,0.0,0.14285714285714285,0.4
+it's all right,3284.88,3.32,3286.54,0.0,0.2857142857142857,0.4
+what's the matter coyotes stop howling,3323.44,6.359,3326.6195,-0.2732,0.0,-0.7
+they help to cover the noise,3326.0,3.799,3327.8995,0.4019,0.0,0.7
+i have to feed the stock,3398.4,6.12,3401.46,0.0,0.0,0.2
+go with him,3407.04,3.48,3408.78,0.0,0.0,0.7
+ah no pitchfork use your hands,3437.52,4.839,3439.9395,-0.296,0.0,0.3
+what you got,3502.16,4.72,3504.52,0.0,0.0,0.3
+fell out of my pocket ah it didn't fail,3503.76,4.319,3505.9195000000004,0.431,-0.5,0.4
+what you got,3506.88,3.52,3508.6400000000003,0.0,0.0,0.3
+i tell you it fell out of my pocket what,3508.079,3.52,3509.8390000000004,0.0,0.0,-0.7
+well it's a letter from my father put,3511.599,5.641,3514.4195,0.2732,0.0,0.3
+like holly,3547.92,5.32,3550.58,0.3612,0.0,0.6
+pretty small letter,3549.44,3.8,3551.34,0.4939,0.0,0.6
+there you go,3559.52,3.279,3561.1595,0.0,0.0,0.7
+i'm gonna water the stock they got,3560.96,3.119,3562.5195,0.0,0.0,0.4
+enough water,3562.799,4.521,3565.0595,0.0,0.0,0.7
+we go back,3564.079,12.091,3570.1245000000004,0.0,0.0,0.4
+did you get it,3597.359,3.48,3599.099,0.0,0.0,0.2
+did you get the gun no,3610.559,4.321,3612.7195,-0.5574,0.0,-0.7
+i didn't have time,3612.96,6.359,3616.1395,0.0,0.0,-0.5
+i had one piece of luck though,3614.88,4.439,3617.0995,0.4588,0.0,0.4
+hey yancey,3640.839,4.361,3643.0195,0.0,0.0,0.4
+got boss get up on that water tower and,3643.28,4.96,3645.76,0.0,0.0,0.4
+watch the road boss i i just got come on,3645.2,6.28,3648.34,0.0,0.0,0.3
+what is it,3704.96,2.48,3706.2,0.0,0.0,0.2
+it's the knife,3706.079,4.76,3708.459,0.0,0.0,0.4
+flipped out,3707.44,3.399,3709.1395,0.0,0.0,0.7
+it's right in the path,3712.88,2.88,3714.32,0.0,0.2857142857142857,0.4
+they're bound to see if they go around,3714.4,4.6,3716.7,0.0,0.0,0.4
+i've got to take the baby out where,3764.48,5.359,3767.1595,0.0,0.0,0.4
+where do you think,3766.48,3.359,3768.1595,0.0,0.0,0.2
+just out for a walk grazie,3817.839,5.801,3820.7395,0.0,0.0,0.7
+then take one,3820.0,3.64,3821.82,0.0,0.0,0.2
+hey look what the kid found,3827.2,4.04,3829.22,0.0,0.0,0.7
+busted kid,3841.2,6.359,3844.3795,0.0,0.0,-0.7
+want to see me do a trick huh,3843.2,4.359,3845.3795,0.0258,0.0,0.7
+i love kids,3855.92,4.72,3858.28,0.6369,0.5,0.8
+hey you want to see me do it again,3857.52,3.12,3859.08,0.0772,0.0,0.4
+come on you know what sims say,3861.76,4.76,3864.14,0.0,0.0,0.7
+come on come on,3877.039,3.881,3878.9795,0.0,0.0,0.7
+tommy must have heard,3952.559,3.881,3954.4995,0.0,0.0,0.3
+you might tell your wife it's not easy,3976.64,3.84,3978.56,-0.3412,-0.21666666666666667,-0.7
+to hear through that door,3978.4,4.48,3980.64,0.0,0.0,0.2
+i tried it,3980.48,5.8,3983.38,0.0,0.0,0.4
+stagecoach will be here in less than an,4004.16,3.28,4005.8,0.0,-0.16666666666666666,0.7
+hour if it's on time,4005.76,5.88,4008.7,0.0,0.0,0.7
+come on let's saddle up the horses,4007.44,4.2,4009.54,0.0,0.0,0.7
+not in front of the house back of the,4038.16,4.76,4040.54,0.0,0.0,-0.5
+you better get back to the door,4097.44,3.879,4099.3795,0.4404,0.25,0.6
+no more grots you've had enough,4116.56,5.84,4119.4800000000005,-0.296,-0.125,-0.7
+now look i wanna,4119.52,4.48,4121.76,0.0,0.0,0.4
+look i wanna go over everything for the,4122.4,3.12,4123.96,0.0,0.0,0.4
+we can't depend on yancey i'm gonna,4125.52,4.799,4127.919500000001,0.0,0.0,-0.7
+leave him where he is and then,4127.279,6.56,4130.559,-0.0516,0.0,-0.7
+are you listening tevas,4130.319,3.52,4132.079000000001,0.0,0.0,0.2
+what is it,4176.0,4.64,4178.32,0.0,0.0,0.2
+the knife i broke the knife,4177.44,6.399,4180.639499999999,-0.4215,0.0,-0.7
+i was afraid that was going to happen,4180.64,5.599,4183.4395,0.0,-0.6,-0.4
+i later budget,4187.679,2.801,4189.0795,0.0,0.0,-0.7
+see if you can squeeze right now,4191.44,5.759,4194.3195,0.0,0.2857142857142857,0.7
+wait a minute,4195.199,5.161,4197.7795,0.0,0.0,0.3
+get your shoulder down,4205.36,3.64,4207.179999999999,0.0,-0.15555555555555559,0.4
+why do you get yourself all worked up,4272.4,4.64,4274.719999999999,0.0,0.0,-0.7
+we've done everything we can,4275.199,3.761,4277.0795,0.0,0.0,-0.7
+digging our hands raw like a couple of,4277.04,2.8,4278.44,0.3612,-0.23076923076923078,-0.7
+letting him step all over us ordering us,4279.84,3.2,4281.4400000000005,0.0,0.0,0.4
+mrs owens go along with and grass,4283.04,6.56,4286.32,0.0,0.0,-0.7
+no the baby stays here get a move on put,4286.64,5.84,4289.56,-0.296,0.0,-0.7
+the baby to bed owens get out the team,4289.6,5.68,4292.4400000000005,0.0,0.0,0.3
+follow him tennis gruffs keep an eye on,4292.48,5.36,4295.16,0.0,0.0,0.3
+where are you going mrs owens do this do,4295.28,3.919,4297.2395,0.0,0.0,0.4
+and we did it well what else could we do,4299.199,4.321,4301.3595,0.2732,0.0,0.7
+you can't argue with a gun,4301.44,3.759,4303.3195,-0.0936,0.0,-0.7
+and where did it get us well we're still,4303.52,3.6,4305.320000000001,0.2732,0.0,-0.7
+alive aren't we yes we're still alive,4305.199,3.441,4306.9195,0.4482,0.1,0.7
+and you know what's gonna happen just as,4307.12,2.88,4308.56,0.0,0.0,0.7
+well as i do,4308.64,2.8,4310.04,0.2732,0.0,0.7
+well sure i do,4310.0,2.8,4311.4,0.5267,0.5,-0.7
+any minute now they're gonna take me out,4311.44,3.759,4313.3195,0.0,0.0,0.4
+there to harness that team i'm their,4312.8,5.439,4315.5195,0.0,0.0,0.6
+bait for a fine ambush uh a turkey shoot,4315.199,4.96,4317.678999999999,-0.1531,0.4166666666666667,0.3
+sure i know what's gonna happen now what,4318.239,3.92,4320.199,0.3182,0.5,0.3
+do you want me to do about it say i'm,4320.159,4.641,4322.4795,0.0772,0.0,0.4
+sorry mr zimmerman i'm not working today,4322.159,3.841,4324.0795,-0.0772,-0.5,-0.7
+sure i took orders sure i let him walk,4326.0,4.48,4328.24,0.5574,0.5,0.3
+all over me sure i rode along and why,4327.84,4.24,4329.96,0.3182,0.5,-0.7
+because i was scared,4330.48,2.96,4331.959999999999,-0.4404,0.0,-0.7
+scared stiff,4332.08,3.44,4333.8,-0.4404,-0.21428571428571427,-0.8
+i'm just like you sister i want to live,4333.44,6.52,4336.7,0.4215,0.13636363636363635,0.7
+i want to live just as long as i can,4335.52,4.44,4337.740000000001,0.0772,0.043181818181818175,0.4
+up to now we've been mr and mrs and,4346.88,3.839,4348.7995,0.0,0.0,0.4
+she's been our kid,4348.96,3.52,4350.72,0.0,0.0,0.8
+i figured it was a good bargain for both,4350.719,3.041,4352.2395,0.5719,0.7,0.7
+but from here on out maybe you can do,4353.76,4.32,4355.92,0.0,0.0,0.7
+better on your own,4355.679,3.441,4357.3995,0.4404,0.55,0.3
+what can you lose,4359.12,3.68,4360.96,-0.4019,0.0,-0.5
+maybe you better tell the zimmerman who,4361.28,3.919,4363.2395,0.4404,0.5,0.4
+all right owens,4366.159,5.121,4368.719499999999,0.0,0.2857142857142857,0.6
+just a minute zimmerman,4368.56,6.08,4371.6,0.0,0.0,0.2
+i've got something i want to tell you,4371.28,3.36,4372.96,0.0772,0.0,0.7
+it was a good bargain,4375.6,4.48,4377.84,0.5719,0.7,0.4
+it's still a good bargain come on owens,4377.84,4.3,4379.99,0.5719,0.7,0.7
+kiss her and get it over with,4380.08,6.24,4383.2,0.4215,0.0,-0.7
+i'll get the baby,4386.32,10.82,4391.73,0.0,0.0,0.8
+get in this doorway,4400.4,6.2,4403.5,0.0,0.0,0.4
+and don't leave it,4402.719,3.881,4404.6595,0.0382,0.0,0.5
+get up there with yancy yeah i see the,4457.679,4.881,4460.1195,0.296,0.0,0.7
+stage ought to show up any minute now,4460.0,5.84,4462.92,0.0,0.0,0.4
+keep out of sight yes him,4462.56,5.92,4465.52,0.4019,0.0,0.2
+now before you start owens take a look,4465.84,4.96,4468.32,0.0,0.0,0.3
+over there,4468.48,5.199,4471.0795,0.0,0.0,0.2
+take a good look,4470.8,2.879,4472.239500000001,0.4404,0.7,-0.7
+he'll watch every move you make,4474.8,3.76,4476.68,0.0,0.0,0.7
+and if you want to see your wife and,4477.12,3.2,4478.72,0.0772,0.0,0.4
+child again,4478.56,3.92,4480.52,0.0,0.0,-0.6
+don't make any mistakes,4480.32,4.879,4482.7595,0.2755,0.0,0.7
+now get going,4482.48,2.719,4483.839499999999,0.0,0.0,0.7
+what kind of a man are you zimmerman,4485.36,5.04,4487.88,0.0,0.6,0.3
+anybody can see that you're educated,4488.64,5.36,4491.320000000001,0.0,0.0,0.7
+that you've had a good background,4490.4,5.279,4493.0395,0.4404,0.7,0.7
+oh i can understand the crazy thinking,4494.0,3.6,4495.8,-0.34,-0.6,0.7
+of a road agent or a trigger-happy,4495.679,3.681,4497.5195,0.0,0.0,-0.7
+renegade but,4497.6,3.68,4499.4400000000005,0.0,0.0,0.7
+how a man could leave a woman and baby,4499.36,4.48,4501.599999999999,-0.0516,0.0,0.4
+alone with an animal like that i,4501.28,4.72,4503.639999999999,0.128,0.0,-0.7
+i just don't understand it do as you're,4503.84,4.08,4505.88,0.0,0.0,-0.7
+told and nobody will get hurt,4506.0,3.76,4507.88,-0.5267,0.0,0.2
+you expect me to believe that you have,4507.92,4.56,4510.2,0.0,0.0,-0.7
+let him go now,4515.04,2.8,4516.44,0.0,0.0,-0.7
+then i'll play your game with you to the,4517.84,2.48,4519.08,0.34,-0.4,0.4
+you can have my word on it i swear it,4520.32,5.6,4523.12,-0.0516,0.0,0.7
+when you get a little older and some of,4524.56,3.44,4526.280000000001,0.0,-0.010416666666666671,0.3
+the green wears off of you,4525.92,3.759,4527.7995,0.0,-0.2,-0.7
+you'll learn never to trust anyone with,4528.0,3.04,4529.52,-0.4023,0.0,-0.7
+now get going,4531.04,3.52,4532.8,0.0,0.0,0.7
+and don't worry too much about what kind,4532.56,4.24,4534.68,0.7009,0.4,0.5
+of a man i am,4534.56,4.159,4536.6395,0.0,0.0,0.4
+just keep your mind on your wife and,4536.8,3.2,4538.400000000001,0.0,0.0,0.4
+now come on let's go,4540.0,3.8,4541.9,0.0,0.0,0.7
+kelly come back here,4588.4,3.96,4590.379999999999,0.0,0.0,0.7
+kelly come back here,4596.88,3.96,4598.86,0.0,0.0,0.7
+open the door,4620.08,3.56,4621.86,0.0,0.0,0.4
+have you gone completely local now wait,4663.6,5.44,4666.320000000001,0.0,0.0,-0.7
+a minute sam,4666.64,3.84,4668.56,0.0,0.0,0.3
+you don't know what happened,4669.04,3.44,4670.76,0.0,0.0,-0.7
+don't shoot,4670.48,4.239,4672.599499999999,0.2584,0.0,-0.7
+she went haywire i couldn't let her run,4672.48,3.44,4674.2,0.0,0.0,0.6
+out could i,4674.719,2.721,4676.0795,0.0,0.0,-0.7
+it ain't my fault sam i have been wrong,4677.44,5.279,4680.0795,-0.2124,-0.5,0.2
+i admit it but from here on,4680.239,4.081,4682.2795,0.1027,0.0,0.2
+i'm taking your orders,4682.719,5.081,4685.2595,0.0,0.0,0.6
+take her in there,4684.32,3.48,4686.06,0.0,0.0,0.6
+now lock that door,4722.159,3.801,4724.059499999999,0.0,0.0,0.4
+you killed him,4744.56,5.2,4747.160000000001,-0.6705,-0.2,-0.8
+what for you i'm boss now from here on,4746.4,7.799,4750.2995,0.0,0.0,0.7
+i'm running this show you yourself,4749.76,4.439,4751.9795,0.0,0.0,0.7
+keep your gun on him yancy,4808.8,5.439,4811.5195,-0.34,0.0,0.7
+where are you yellow belly hersey heresy,4811.199,6.681,4814.5395,0.0,0.0,-0.7
+can you hear me,4814.239,3.641,4816.059499999999,0.0,0.0,0.4
+stick your head out it'll cool you off,4903.44,4.52,4905.7,0.3182,0.35,0.7
+you ain't no shot either owens,4917.44,3.68,4919.28,0.2235,0.0,0.4
+miss me a mile,4921.199,2.96,4922.678999999999,-0.1531,0.0,0.7
+what's the matter owens,4928.4,4.319,4930.559499999999,0.0258,0.0,0.2
+you're losing your nerve where you're,4930.96,5.52,4933.72,-0.3818,0.0,-0.7
+running out of ammunition i got enough,4932.719,5.601,4935.5195,0.0,0.0,0.6
+i got enough to hold you there until the,4936.48,4.56,4938.759999999999,0.0,0.0,0.4
+stage comes,4938.32,2.72,4939.679999999999,0.0,0.0,0.2
+what's the matter tevis you running out,4942.159,5.601,4944.9595,0.0258,0.0,-0.7
+of brave talk,4944.96,2.8,4946.36,0.5267,0.8,0.7
+you hear that tevis,4954.48,5.28,4957.12,0.0,0.0,0.7
+i'm satisfied to sit it out with you,4957.28,4.959,4959.7595,0.4215,0.5,0.2
+blow that thing again,4965.92,3.719,4967.7795,0.0,0.0,0.7
+i don't think we'll have to sit it out,4980.0,6.679,4983.3395,0.0,0.0,0.7
+look at the gate,4983.199,3.48,4984.938999999999,0.0,0.0,-0.7
+that you had me didn't show,4997.6,3.44,4999.320000000001,0.0,0.0,0.2
+walk towards me with your hands up,5010.4,5.0,5012.9,0.0,0.0,0.7
+stand up and throw down your gun there,5025.36,4.4,5027.56,-0.34,-0.15555555555555559,-0.7
+my next shot won't miss her,5027.44,5.92,5030.4,0.1139,0.0,-0.8
+that sounded like shooting to me,5029.76,3.6,5031.56,0.3612,0.0,0.6
+you got three seconds,5040.719,3.761,5042.5995,0.0,0.0,-0.7
+dropped again,5049.679,2.96,5051.159,0.0,0.0,-0.7
+that's right,5054.239,6.281,5057.3795,0.0,0.2857142857142857,0.7
+just keep it coming,5056.8,3.72,5058.66,0.0,0.0,0.7
+that's nice,5071.36,5.359,5074.0395,0.4215,0.6,0.7
+that's real nice,5073.6,3.119,5075.159500000001,0.4215,0.8999999999999999,0.7
+just keep it coming,5081.44,3.719,5083.299499999999,0.0,0.0,0.7
+let me see how much guts you got,5088.239,3.92,5090.199,0.0,0.2,0.6
+keep it coming,5094.08,3.52,5095.84,0.0,0.0,0.7
+keep it coming,5095.84,3.6,5097.64,0.0,0.0,0.7
+don't yellow it now,5097.6,3.68,5099.4400000000005,0.0,0.0,-0.7
+it ain't but a short piece to where,5099.44,5.08,5101.98,0.0,0.0,0.2
+you're going,5101.28,3.24,5102.9,0.0,0.0,0.4
+what's been going on here tom tom,5140.88,4.96,5143.36,0.0,0.0,0.3
+that pot walloper up there came running,5143.92,3.52,5145.68,0.0,0.0,0.3
+toward us with this shoe in his hand,5145.84,4.24,5147.96,0.4939,0.0,0.7
+says it belongs to you does it,5147.44,4.96,5149.919999999999,0.0,0.0,0.5
+he's an honest man jake,5150.08,4.24,5152.2,0.5106,0.6,0.7
+it does will you tell me what in,5152.4,5.279,5155.0395,0.0,0.0,0.2
+jerusalem you've been doing here,5154.32,3.359,5155.9995,0.0,0.0,0.5
+learning the business jim,5159.28,5.439,5161.9995,0.0,0.0,0.4
+just learning the business,5161.6,3.119,5163.159500000001,0.0,0.0,0.5
+that's it the jackass mail,5166.639,6.801,5170.0395,-0.4215,-0.5,-0.7
+the shortest fastest back reaganos ride,5170.48,5.52,5173.24,0.0,0.0,0.7
+you can buy for 200 gold,5173.44,4.64,5175.759999999999,0.0,0.0,0.6
+meals included,5176.0,5.28,5178.64,0.0,0.0,0.6
+san francisco to st louis in 25 days and,5178.08,9.639,5182.8995,0.0,0.0,0.2
+25 nights yes sir the jackass mail,5181.28,6.439,5184.4995,-0.0258,-0.5,0.3

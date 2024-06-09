@@ -5,7 +5,7 @@ import re
 # Define directory and file paths
 dir_path = os.path.join("..", "data")
 
-input_file = "dataset_yt_vid_small.txt"
+input_file = "dataset_yt_videos_ids.txt"
 output_file = "dataset_yt_vid_small.txt"
 
 input_file_path = os.path.join(dir_path, input_file)
