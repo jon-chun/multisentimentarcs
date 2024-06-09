@@ -27,7 +27,7 @@ and non-copyrighted data will be available at https://github.com/jon-chun/multis
 
 | ![Roydl Wedding Video Sentiment Arcs](/data/transcripts_plots/musical/Royal_Wedding_1951_sma10_plot.png) | 
 |:--:| 
-| *Royal Wedding (1951) Transcript Sentiment Arcs* |
+| *Royal Wedding (1951) Video Sentiment Arcs* |
 
 
 | ![Roydl Wedding Transcript Sentiment Arcs](/data/transcripts_plots/musical/Royal_Wedding_1951_sma10_plot.png) | 
@@ -41,7 +41,7 @@ and non-copyrighted data will be available at https://github.com/jon-chun/multis
 
 | ![Roydl Wedding Transcript Sentiment KDE Distribution](/data/transcripts_plots/musical/Royal_Wedding_1951_kde_plot.png) | 
 |:--:| 
-| *Royal Wedding (1951) Video Sentiment KDE Distribution* |
+| *Royal Wedding (1951) Transcripts Sentiment KDE Distribution* |
 
 
 ### NOTE:
