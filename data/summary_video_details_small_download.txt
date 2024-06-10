@@ -1,0 +1,416 @@
+# romance
+
+film_name="Sabrina"
+film_year=1954
+film_genre="romance"
+film_url="www.youtube.com/watch?v=xYgoNiSo-kY"
+
+film_name="The Last Time I Saw Paris"
+film_year=1954
+film_genre="romance"
+film_url="www.youtube.com/watch?v=UdPV5tSmO1M"
+
+film_name="A Letter to Three Wives"
+film_year=1949
+film_genre="romance"
+film_url="www.youtube.com/watch?v=ZwhNFVTelMo"
+
+film_name="Arch of Triumph"
+film_year=1948
+film_genre="romance"
+film_url="www.youtube.com/watch?v=cuHm3RCZF4o"
+
+film_name="September Affair"
+film_year=1950
+film_genre="romance"
+film_url="www.youtube.com/watch?v=OmXX80pTCCw"
+
+film_name="Too Many Husbands"
+film_year=1954
+film_genre="romance"
+film_url="www.youtube.com/watch?v=Jn0YTKCndLc"
+film_url="www.youtube.com/watch?v=5ekhwbscfkg"
+
+film_name="The Last Time I Saw Paris"
+film_year=1954
+film_genre="romance"
+film_url="www.youtube.com/watch?v=UdPV5tSmO1M"
+
+film_name="Magic Town"
+film_year=1947
+film_genre="romance"
+film_url="www.youtube.com/watch?v=liMwhCnJf8U"
+
+film_name="Tonight and Every Night"
+film_year=1945
+film_genre="romance"
+film_url="www.youtube.com/watch?v=simDMIU1qVo"
+
+film_name="I Can Get It For You Wholesale"
+film_year=1951
+film_genre="romance"
+film_url="www.youtube.com/watch?v=13eJdf1xVmE"
+
+# comedy 
+
+film_name="The Million Pound Note"
+film_year=1954
+film_genre="comedy"
+film_url="www.youtube.com/watch?v=gyePJXDB-uQ"
+
+film_name="The Caddy"
+film_year=1953
+film_genre="comedy"
+film_url="www.youtube.com/watch?v=Dn8rJyLBY8c"
+
+film_name="You're Never Too Young"
+film_year=1955
+film_genre="comedy"
+film_url="www.youtube.com/watch?v=DYUF2hqhP3w"
+
+film_name="Road to Bali"
+film_year=1952
+film_genre="comedy"
+film_url="www.youtube.com/watch?v=9WNBYmHvNn0"
+
+film_name="Sitting Pretty"
+film_year=1948
+film_genre="comedy"
+film_url="www.youtube.com/watch?v=kgcNdOHZW6I"
+
+film_name="Sorrowful Jones"
+film_year=1949
+film_genre="comedy"
+film_url="www.youtube.com/watch?v=f8IZGi_SSjc"
+
+film_name="Monkey Business"
+film_year=1952
+film_genre="comedy"
+film_url="www.youtube.com/watch?v=_31eW3AnakE"
+
+film_name="The Jackpot"
+film_year=1950
+film_genre="comedy"
+film_url="www.youtube.com/watch?v=QXoA6dFroxg"
+
+film_name="Gentlemen Prefer Blondes"
+film_year=1953
+film_genre="comedy"
+film_url="www.youtube.com/watch?v=WYVri7M6Ji8"
+
+film_name="Father's Little Dividend"
+film_year=1951
+film_genre="comedy"
+film_url="www.youtube.com/watch?v=YM6598Z-tGQ"
+
+# drama
+
+film_name="Stalag 17"
+film_year=1953
+film_genre="drama"
+film_url="www.youtube.com/watch?v=njcqwleu9kc"
+
+film_name="The Razor's Edge"
+film_year=1946
+film_genre="drama"
+film_url="www.youtube.com/watch?v=aQ26TUBqJAE"
+
+film_name="No Highway in the Sky"
+film_year=1951
+file_genre="drama"
+film_url="www.youtube.com/watch?v=tT9Wug_exPY"
+
+film_name="All My Sons"
+film_year=1948
+film_genre="drama"
+film_url="www.youtube.com/watch?v=qpYPbrRoQbU"
+
+film_name="A Tree Grows in Brooklyn"
+film_year=1945
+file_genre="drama"
+film_url="www.youtube.com/watch?v=yUB9J2ZMczw"
+
+film_name="House of Strangers"
+film_year=1949
+film_genre="drama"
+film_url="www.youtube.com/watch?v=dr6Pr6S9eyA"
+
+film_name="Deep Waters"
+film_year=1948
+file_genre="drama"
+film_url="www.youtube.com/watch?v=fpXLgYCGIGU"
+
+film_name="Sentimental Journey"
+film_year=1946
+film_genre="drama"
+film_url="www.youtube.com/watch?v=8NrEBj787Xk"
+
+film_name="The Bells of St. Mary's"
+film_year=1945
+file_genre="drama"
+film_url="www.youtube.com/watch?v=APRNe_3tzdg"
+
+film_name="Salome"
+film_year=1953
+file_genre="drama"
+film_url="www.youtube.com/watch?v=3Aq7R-t26WU"
+
+# adventure
+
+film_name="Rope of Sand"
+film_year=1949
+film_genre="adventure"
+film_url="www.youtube.com/watch?v=ykiYahAJBsQ"
+
+film_name="The Snows of Kilimanjaro"
+film_year=1952  
+film_genre="adventure"
+film_url="www.youtube.com/watch?v=NvmC_QxfZRc"
+
+film_name="Captain Pirate"
+film_year=1952
+film_genre="adventure"
+film_url="www.youtube.com/watch?v=sGc9GrBJ6Qo"
+
+film_name="Captain Kidd"
+film_year=1945
+film_genre="adventure"
+film_url="www.youtube.com/watch?v=mu1UipmP5FI"
+
+film_name="Wake of the Red Witch"
+film_year=1948
+film_genre="adventure"
+film_url="/www.youtube.com/watch?v=jmCePJPvPbk"
+
+film_name="The Big Cat"
+film_year=1949
+film_genre="adventure"
+film_url="www.youtube.com/watch?v=WlQ3M-T1EuU"
+
+film_name="Beneath the 12-Mile Reef"
+film_year=1953
+film_genre="adventure"
+film_url="www.youtube.com/watch?v=A577UAwKytg"
+
+film_name="Prince of Foxes"
+film_year=1949
+film_genre="adventure"
+film_url="www.youtube.com/watch?v=kJILFPyczNo"
+
+film_name="The Fortunes of Captain Blood"
+film_year=1950
+film_genre="adventure"
+film_url="www.youtube.com/watch?v=2o4qn2F3M14"
+
+film_name="Secret of the Incas"
+film_year=1954
+film_genre="adventure"
+film_url="www.youtube.com/watch?v=vjE1vKnt5Mo"
+
+# psychological-thriller
+
+film_name="The Upturned Glass"
+film_year=1947
+film_genre="psychological-thriller"
+film_url="www.youtube.com/watch?v=9vZht4OKtwQ"
+
+film_name="The Lost Moment"
+film_year=1947
+film_genre="psychological-thriller"
+film_url="www.youtube.com/watch?v=YP2gId2xO-Q"
+
+film_name="The Spiral Staircase"
+film_year=1946
+film_genre="psychological-thriller"
+film_url="www.youtube.com/watch?v=Y4iV-7lY5qY"
+
+film_name="The Dark Mirror"
+film_year=1940
+film_genre="psychological-thriller"
+film_url="www.youtube.com/watch?v=7IArn6-gNek"
+
+film_name="The Dark Past"
+film_year=1948
+film_genre="psychological-thriller"
+film_url="www.youtube.com/watch?v=rIRYyx_9BGI"
+
+film_name="The Woman in the Window"
+film_year=1944
+film_genre="psychological-thriller"
+film_url="www.youtube.com/watch?v=1caYrck5UPU"
+
+film_name="Dear Murderer"
+film_year=1947
+film_genre="psychological-thriller"
+film_url="www.youtube.com/watch?v=Hw59GS_IukI"
+
+film_name="Too Late for Tears"
+film_year=1949
+film_genre="psychological-thriller"
+film_url="www.youtube.com/watch?v=HC786aSlejY"
+
+film_name="The Amazing Mr. X"
+film_year=1948
+film_genre="psychological-thriller"
+film_url="www.youtube.com/watch?v=4NGTgtG-ZZQ"
+
+film_name="Sleep, My Love"
+film_year=1948
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=02MLcOMUT1A"
+
+# film noir
+
+film_name="Brute Force"
+film_year=1947
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=znvXZK6dwRk"
+
+film_name="The Stranger"
+film_year=1946
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=5zU7MoRuGDw"
+
+film_name="Caught"
+film_year=1949
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=45XAkeH7eNA"
+
+film_name="Black Angle"
+film_year=1945
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=UjdPK3heym0"
+
+film_name="Kansas City Confidential"
+film_year=1952
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=osqmCF8Q5qo"
+
+film_name="Notorious"
+film_year=1946
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=7LwPhO2qPcQ"
+
+film_name="The Mob"
+film_year=1951
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=45Fq8FHWjgE"
+
+film_noir="Johnny O'Clock"
+film_year=1947
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=tJa9MOcsQNM"
+
+film_name="Turn the Key Softly"
+film_year=1953
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=ojsFJKsORXY"
+
+film_name="Detour"
+film_year=1945
+film_genre="filmnoir"
+film_url="www.youtube.com/watch?v=dSdHX2dd_po"
+
+# musical
+
+film_name="Royal Wedding"
+film_year=1951
+film_genre="musical"
+film_url="www.youtube.com/watch?v=24A5h-ZVxQ8"
+
+film_name="That Lady in Ermine"
+film_year=1948
+film_genre="musical"
+film_url="www.youtube.com/watch?v=jQAZ8D8q5ss"
+
+film_name="Something in the Wind"
+film_year=1947
+film_genre="musical"
+film_url="www.youtube.com/watch?v=OPU3fWW6b1Y"
+
+film_name="State Fair"
+film_year=1945
+film_genre="musical"
+film_url="www.youtube.com/watch?v=T7o6_KNtwIM"
+
+film_name="There's No Business Like Showbusiness"
+film_year=1954
+film_genre="musical"
+film_url="www.youtube.com/watch?v=Lhn9rIx3y_s"
+
+film_name="Top O' The Morning"
+film_year=1949
+film_genre="musical"
+film_url="www.youtube.com/watch?v=38P6Qt5B5x8"
+
+film_name="Daddy Long Legs"
+film_year=1955
+film_genre="music"
+film_url="www.youtube.com/watch?v=xl4qYg7ONak"
+
+film_name="The Emperor's Waltz"
+film_year=1948
+film_genre="musical"
+film_url="www.youtube.com/watch?v=il5vAR3UbjM"
+
+film_name="The Inspector General"
+film_year=1949
+film_genre="musical"
+film_url="www.youtube.com/watch?v=gy6mexgKyZQ"
+
+film_name="You're My Everything"
+film_year=1949
+film_genre="musical"
+film_url="www.youtube.com/watch?v=_SsK4JOulow"
+
+# western 
+
+film_name="Rawhide"
+film_year=1951
+film_genre="western"
+film_url="www.youtube.com/watch?v=rEdH9yWhFfg"
+
+film_name="Vengence Valley"
+film_year=1951
+film_genre="western"
+film_url="www.youtube.com/watch?v=L6uunldtOT0"
+
+film_name="Duel in the Sun"
+film_year=1946
+film_genre="western"
+film_url="www.youtube.com/watch?v=PbYLHQCzQ6E"
+
+film_name="Only the Valient"
+film_year=1951
+film_genre="western"
+film_url="www.youtube.com/watch?v=JcyZyw8FNp4"
+
+film_name="The Last Command"
+film_year=1955
+film_genre="western"
+film_url="www.youtube.com/watch?v=d47Qpjn1WX0"
+
+film_name="Bend of the River"
+film_year=1952
+film_genre="western"
+film_url="www.youtube.com/watch?v=bRgV0DjBios"
+
+film_name="Broken Arrow"
+film_year=1950
+film_genre="western"
+film_url="www.youtube.com/watch?v=TkZa_9QjXbQ"
+
+film_name="Abilene Town"
+film_year=1946
+film_genre="western"
+film_url="www.youtube.com/watch?v=i3fR5QHESAk"
+
+film_name="Shotgun"
+film_year=1955
+film_genre="western"
+film_url="www.youtube.com/watch?v=7bSdLdZdbEY"
+
+film_name="Little Bighorn"
+film_year=1951
+film_genre="western"
+film_url="www.youtube.com/watch?v=BKFTBpI37F8"

@@ -94,11 +94,20 @@ def process_keyframes(leaf_dirs):
         keyframes_sorted = sorted(keyframes)
         keyframes_total = len(keyframes_sorted)
         for keyframe_index, keyframe in enumerate(keyframes_sorted):
+            # Check if the output file already exists
+            relative_path = os.path.relpath(leaf_dir, ROOT_INPUT_DIRECTORY)
+            output_dir = os.path.join(ROOT_OUTPUT_DIRECTORY, relative_path)
+            output_file = os.path.join(output_dir, f"{os.path.splitext(keyframe)[0]}_description.txt")
+            if os.path.exists(output_file):
+                logging.info(f"Skipping {keyframe} as description already exists at {output_file}")
+                continue
+
             print(f"  PROCESSING #{keyframe_index}/{keyframes_total}...")
             keyframe_path = os.path.join(leaf_dir, keyframe)
             description = get_image_sentiment_description(keyframe_path, frame_number)
             save_description(leaf_dir, keyframe, description)
             frame_number += 1
+
 
 def save_description(leaf_dir, keyframe, description):
     """Save the sentiment description to the corresponding output directory."""

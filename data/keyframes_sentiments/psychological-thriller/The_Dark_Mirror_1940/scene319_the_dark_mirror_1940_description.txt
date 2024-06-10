@@ -1,0 +1,7 @@
+The image is a black and white photograph capturing the intricate details of an oscilloscope. The oscilloscope, a device used to measure electrical signals, is resting on a wooden surface. Its screen displays a waveform pattern, indicating the presence of an electrical signal being measured.
+
+Three small needles are affixed to the top of the oscilloscope, each attached by a wire. These needles, known as probes or leads, are crucial for measuring different aspects of the electrical signal. The needle on the left is positioned at the highest point on the screen, while the one in the middle is at its lowest. The needle on the right is slightly higher than the middle one.
+
+The oscilloscope itself is not just a passive device; it's actively involved in the process of measurement. This is evident from the electrical signal being measured and displayed on the screen. The waveform pattern on the screen indicates that the signal is changing over time, suggesting that the oscilloscope is capturing this change.
+
+Overall, the image provides a detailed view of an oscilloscope in action, highlighting its role as a tool for measuring electrical signals.
