@@ -126,7 +126,7 @@ def get_image_sentiment_description(image_path: str, frame_number: int) -> str:
 
 def save_description(genre: str, film_name: str, keyframe: str, description: str) -> None:
     """Save the sentiment description to the corresponding output directory."""
-    sanitized_film_name = sanitize_filename(film_name.replace('-mp4', ''))
+    sanitized_film_name = sanitize_filename(film_name)
     output_dir = os.path.join(ROOT_OUTPUT_DIRECTORY, genre, sanitized_film_name)
     os.makedirs(output_dir, exist_ok=True)
 
@@ -135,7 +135,6 @@ def save_description(genre: str, film_name: str, keyframe: str, description: str
         f.write(description)
 
     logging.info(f"Saved description for {keyframe} at {output_file}")
-    
 
 def extract_scene_number(keyframe: str) -> int:
     """Extract the numeric part of the scene prefix from the keyframe filename."""
@@ -171,8 +170,7 @@ def process_keyframes(leaf_dirs: List[str]) -> None:
         for scene_prefix in sorted(keyframes_by_scene.keys(), key=extract_scene_number):
             for keyframe in sorted(keyframes_by_scene[scene_prefix]):
                 keyframe_path = os.path.join(leaf_dir, keyframe)
-                # output_file = os.path.join(ROOT_OUTPUT_DIRECTORY, genre, sanitize_filename(film_name), f"{os.path.splitext(keyframe)[0]}_description.txt")
-                output_file = os.path.join(ROOT_OUTPUT_DIRECTORY, genre, sanitize_filename(film_name.replace('-mp4', '')), f"{os.path.splitext(keyframe)[0]}_description.txt")
+                output_file = os.path.join(ROOT_OUTPUT_DIRECTORY, genre, sanitize_filename(film_name), f"{os.path.splitext(keyframe)[0]}_description.txt")
                 if os.path.exists(output_file):
                     logging.info(f"Skipping already processed keyframe: {keyframe_path}")
                     continue

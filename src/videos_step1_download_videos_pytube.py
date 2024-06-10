@@ -11,7 +11,8 @@ import random
 
 
 # CONFIGURATION:
-DOWNLOAD_FILM_FILE = "dataset_film_small_details.csv"
+# DOWNLOAD_FILM_FILE = "dataset_film_small_details.csv"
+SUMMARY_DOWNLOAD_FILMS = "dataset_yt_videos_details.csv" # "summary_video_short_details.csv"
 
 
 
@@ -29,9 +30,13 @@ logging.basicConfig(level=logging.INFO,
 
 # Define file paths
 dir_path = os.path.join("..", "data")
-input_file = DOWNLOAD_FILM_FILE
+input_file = SUMMARY_DOWNLOAD_FILMS
 input_file_path = os.path.join(dir_path, input_file)
-summary_file_path = os.path.join(dir_path, "summary_video_download.csv")
+# summary_file_path = os.path.join(dir_path, "summary_video_short_details.csv") # "summary_video_download.csv")
+# Define the output summary file path
+summary_file_path = os.path.join(dir_path, "summary_video_details.csv")
+
+
 
 # Define constants
 MAX_VIDEO_SIZE_MB = 500
@@ -172,8 +177,13 @@ def download_with_timeout(link, download_path, filename_root, timeout=MAX_DOWNLO
 
 # Main logic
 if __name__ == "__main__":
+    # Check if the input file exists
+    if not os.path.exists(input_file_path):
+        logging.error(f"The input file {input_file_path} does not exist. Please check the file path.")
+        exit(1)
+    
     # Read the CSV file
-    df = pd.read_csv(input_file_path)
+    df = pd.read_csv(input_file_path) # input_file_path)
 
     # Iterate over each film and download the video
     for index, row in df.iterrows():

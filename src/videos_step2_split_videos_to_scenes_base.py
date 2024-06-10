@@ -38,8 +38,7 @@ history_df = pd.read_csv(HISTORY_FILE_PATH) if os.path.exists(HISTORY_FILE_PATH)
 
 def sanitize_filename(filename):
     """Sanitize filenames to remove special characters."""
-    filename_noext = os.path.splitext(filename)[0]
-    return re.sub(r'[<>:"/\\|?*.,;]', '-', filename_noext).replace(' ', '_')
+    return re.sub(r'[<>:"/\\|?*.,;]', '-', filename).replace(' ', '_')
 
 def find_leaf_directories(base_path):
     """Find directories without subdirectories."""
@@ -57,7 +56,7 @@ def create_output_subdir(base_output_path, leaf_dir, video_filename):
         logging.info(f"create_output_subdir(): Output file {scenes_file_path} for {video_filename} already exists and is non-empty. Skipping.")
         return output_subdir, True
 
-    if scenes_exist(output_subdir):
+    if keyframes_exist(output_subdir):
         logging.info(f"create_output_subdir(): Keyframes already exist in {output_subdir}. Skipping.")
         return output_subdir, True
 
@@ -70,6 +69,9 @@ def create_output_subdir(base_output_path, leaf_dir, video_filename):
 
     return output_subdir, False
 
+def keyframes_exist(output_subdir):
+    """Check if keyframes already exist in the output subdirectory."""
+    return any(fname.endswith('.jpg') or fname.endswith('.png') for fname in os.listdir(output_subdir))
 
 def count_scenes(scenes_file_path):
     """Count the number of scenes in the given file."""
@@ -79,7 +81,7 @@ def count_scenes(scenes_file_path):
     except Exception as e:
         logging.error(f"count_scenes(): Error counting scenes in {scenes_file_path}: {e}")
         return 0
-    
+
 def trim_video(input_file_path, output_file_path, percentage):
     """Trim the input video to the specified percentage."""
     duration = get_video_duration(input_file_path)
@@ -100,7 +102,6 @@ def trim_video(input_file_path, output_file_path, percentage):
     except subprocess.CalledProcessError as e:
         logging.error(f"trim_video(): Error trimming video {input_file_path}: {e}")
         return False
-
 
 def clean_up_temp_file(output_subdir, video_filename):
     """Clean up temporary partial video file."""
@@ -163,18 +164,11 @@ def process_video_file(input_file_path, base_output_path, leaf_dir):
     video_filename = os.path.basename(input_file_path)
     logging.info(f"process_video_file(): Processing video file: {video_filename}")
 
-    video_basename = os.path.splitext(video_filename)[0]
-    output_subdir = os.path.join(base_output_path, os.path.basename(leaf_dir), sanitize_filename(video_basename))
-
-    # Check if keyframes already exist
-    if scenes_exist(output_subdir):
-        logging.info(f"process_video_file(): Keyframes already exist in {output_subdir}. Skipping processing for {video_filename}.")
-        return
-
     output_subdir, skip = create_output_subdir(base_output_path, leaf_dir, video_filename)
     if skip:
         return
 
+    video_basename = os.path.splitext(video_filename)[0]
     scenes_file_path = os.path.join(output_subdir, f"{video_basename}-Scenes.csv")
     logging.info(f"process_video_file(): Scenes file path: {scenes_file_path}")
 
@@ -191,9 +185,7 @@ def should_skip_processing(video_filename, scenes_file_path):
         return True
     return should_skip_file(video_filename)
 
-
 def process_video_with_retries(input_file_path, output_subdir, video_filename, video_basename, scenes_file_path, current_threshold):
-
     attempt = 0
     while attempt < MAX_RETRY_ATTEMPTS:
         partial_scene_count = partial_scene_detection(input_file_path, output_subdir, current_threshold, PARTIAL_VIDEO_PERCENTAGE)
@@ -207,7 +199,6 @@ def process_video_with_retries(input_file_path, output_subdir, video_filename, v
             print("process_video_with_retries(): FINISHED PROCESSING", video_filename, "\n\n")
             break
         else:
-
             current_threshold_old = current_threshold
             adjust_flag=None
             if MIN_SCENE_COUNT > extrapolated_scene_count:
@@ -225,27 +216,7 @@ def process_video_with_retries(input_file_path, output_subdir, video_filename, v
     logging.error(f"process_video_with_retries(): Failed after {MAX_RETRY_ATTEMPTS} attempts for {video_filename}. Skipping...")
     clean_up_temp_file(output_subdir, video_filename)
 
-
-def clean_up_temp_file(output_subdir, video_filename):
-    """Clean up temporary files."""
-    try:
-        partial_video_path = os.path.join(output_subdir, f"{os.path.splitext(video_filename)[0]}_partial.mp4")
-        if os.path.exists(partial_video_path):
-            os.remove(partial_video_path)
-            logging.info(f"clean_up_temp_file(): Deleted temporary file: {partial_video_path}")
-
-        # Check for empty directories and remove
-        video_dir = os.path.join(output_subdir, os.path.splitext(video_filename)[0])
-        if os.path.isdir(video_dir) and not os.listdir(video_dir):
-            os.rmdir(video_dir)
-            logging.info(f"clean_up_temp_file(): Removed empty directory: {video_dir}")
-
-    except Exception as e:
-        logging.error(f"clean_up_temp_file(): Error cleaning up temporary files for {video_filename}: {e}")
-
-
 def partial_scene_detection(input_file_path, output_subdir, threshold, percentage):
-
     video_filename = os.path.basename(input_file_path)
     video_filename_no_ext = os.path.splitext(video_filename)[0]
     partial_video_path = os.path.join(output_subdir, f"{video_filename_no_ext}_partial.mp4")
@@ -280,54 +251,7 @@ def partial_scene_detection(input_file_path, output_subdir, threshold, percentag
 
     return scene_count
 
-
-"""
 def full_scene_detection(input_file_path, output_subdir, threshold, video_basename, scenes_file_path):
-
-    output_scenes_dir = os.path.join(output_subdir, video_basename)
-    os.makedirs(output_scenes_dir, exist_ok=True)
-
-    logging.info(f"full_scene_detection(): Processing {input_file_path} with threshold {threshold} to {output_scenes_dir}")
-
-    command = [
-        "scenedetect",
-        "--input", input_file_path,
-        "detect-content", "--threshold", str(threshold),
-        "list-scenes",
-        "-o", output_scenes_dir
-    ]
-    if SAVE_STATS:
-        stats_file_path = os.path.join(output_scenes_dir, f"{video_basename}.stats.csv")
-        command.extend(["--save-stats", stats_file_path])
-
-    logging.info(f"full_scene_detection(): Command to execute: {' '.join(command)}")
-
-    try:
-        subprocess.run(command, check=True)
-        logging.info(f"full_scene_detection(): Processed {input_file_path} successfully. Output written to {output_scenes_dir}")
-
-        scenes_file_path = os.path.join(output_scenes_dir, f"{video_basename}-Scenes.csv")
-        scene_count = count_scenes(scenes_file_path)
-        logging.info(f"full_scene_detection(): Scene count for {input_file_path}: {scene_count}")
-
-        if not validate_scene_count(input_file_path, scenes_file_path):
-            logging.warning(f"full_scene_detection(): Invalid scenes detected for {input_file_path}. Adjust your threshold settings.")
-            return
-
-        video_size = os.path.getsize(input_file_path)
-        scene_df.loc[len(scene_df)] = [input_file_path, video_size, scene_count, threshold]
-        scene_df.to_csv(CSV_FILE_PATH, index=False)
-        history_df.loc[len(history_df)] = [input_file_path, video_size, scene_count, threshold]
-        history_df.to_csv(HISTORY_FILE_PATH, index=False)
-    except subprocess.CalledProcessError as e:
-        logging.error(f"full_scene_detection(): Error processing {input_file_path}: {e}")
-""";
-
-
-# Assuming scene_df, CSV_FILE_PATH, history_df, and HISTORY_FILE_PATH are defined somewhere above in the actual code.
-
-def full_scene_detection(input_file_path, output_subdir, threshold, video_basename, scenes_file_path):
-
     output_scenes_dir = os.path.join(output_subdir, video_basename)
     os.makedirs(output_scenes_dir, exist_ok=True)
 
@@ -374,16 +298,9 @@ def full_scene_detection(input_file_path, output_subdir, threshold, video_basena
     except subprocess.CalledProcessError as e:
         logging.error(f"full_scene_detection(): Error processing {input_file_path}: {e}")
 
-def scenes_exist(output_subdir):
-    """Check if keyframes already exist in the output subdirectory."""
-    if not os.path.exists(output_subdir):
-        return False
-    return any(fname.endswith('.jpg') or fname.endswith('.png') for fname in os.listdir(output_subdir))
 
-
-"""
 def main():
-
+    """Main function to process all video files."""
     input_dir_base_path = os.path.join("..", "data", "videos")
     output_dir_base_path = os.path.join("..", "data", "scenes")
 
@@ -405,53 +322,6 @@ def main():
                     logging.info(f"main(): Removed empty directory: {output_dir_base_path}")
 
     logging.info("main(): All videos processed.")
-""";
-
-
-def main():
-    """Main function to process all video files."""
-    input_dir_base_path = os.path.join("..", "data", "videos")
-    output_dir_base_path = os.path.join("..", "data", "scenes")
-
-    leaf_dirs = find_leaf_directories(input_dir_base_path) if not SELECTED_VIDEOS_LIST else \
-        [os.path.join(input_dir_base_path, partial_path.strip("/")) for partial_path in SELECTED_VIDEOS_LIST]
-
-    for leaf_dir in leaf_dirs:
-        logging.info(f"main(): Processing directory: {leaf_dir}")
-        filename_list = sorted(os.listdir(leaf_dir))
-
-        for filename in filename_list:
-            print(f"  PROCESSING: filename: {filename}")
-            print(f"  PROCESSING: leaf_dir: {leaf_dir}")
-            output_subdir = os.path.join(leaf_dir, sanitize_filename(filename))
-            output_subdir = output_subdir.replace("/videos/", "/scenes/")
-            print(f"  PROCESSING: output_subdir: {output_subdir}")
-            if filename.endswith(".mp4"):
-                input_file_path = os.path.join(leaf_dir, filename)
-                logging.info(f"main(): Found MP4 file: {input_file_path}")
-
-                # output_dir_fullpath = os.path.join(output_dir_base_path, leaf_dir, filename)
-                # Check if scene detection has already been performed
-                print(f"  checking if output directory exists: {output_subdir}")
-                # if scenes_exist(output_subdir):
-                if os.path.isdir(output_subdir):
-                    logging.info(f"main(): Skipping {input_file_path} because keyframes already exist in {output_subdir}.")
-                    continue
-                else:
-                    print(f"    output directory does not exist, processing {input_file_path}")
-                    process_video_file(input_file_path, output_subdir, leaf_dir)
-
-                # Perform scene detection
-                # process_video_file(input_file_path, output_dir_base_path, leaf_dir)
-
-                # Check if the output directory is empty
-                # if not os.listdir(output_dir_base_path):
-                #     os.rmdir(output_dir_base_path)
-                #     logging.info(f"main(): Removed empty directory: {output_dir_base_path}")
-
-    logging.info("main(): All videos processed.")
-
-
 
 if __name__ == "__main__":
     main()
