@@ -9,8 +9,6 @@ import seaborn as sns
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from textblob import TextBlob
 from tqdm import tqdm
-# Assume that 'ollama' is the client module for the specialized LLM model
-import ollama
 
 # Constants
 PLOT_TYPE = "videos"  # "videos" or "transcripts"
@@ -57,6 +55,8 @@ def handle_outliers(series):
 
 def timeseries_norm(df, df_col_list=['vader', 'textblob', 'llama3'], sma_per=10):
     try:
+        if 'time_midpoint' not in df.columns:
+            raise ValueError("Column 'time_midpoint' not found in DataFrame")
         if sma_per < 3 or sma_per > 20:
             raise ValueError("sma_per must be between 3 and 20 percent")
         window_size = int(len(df) * (sma_per / 100))
@@ -72,7 +72,7 @@ def timeseries_norm(df, df_col_list=['vader', 'textblob', 'llama3'], sma_per=10)
             # Compute SMA on normalized data with min_periods adjusted
             smoothed_col = pd.Series(normalized_col).rolling(window=window_size, min_periods=window_size//2).mean()
             # Check for NaN values and fill them
-            smoothed_col = smoothed_col.fillna(method='bfill').fillna(method='ffill')
+            smoothed_col = smoothed_col.bfill().ffill()
             # Apply smoothing using spline
             spline = UnivariateSpline(df['time_midpoint'], smoothed_col, s=1)
             fitted_values = spline(df['time_midpoint'])
@@ -133,6 +133,10 @@ def process_file(file_path):
     """Process the given file and generate required output files."""
     logging.info(f"Processing file: {file_path}")
     
+    if not os.path.exists(file_path):
+        logging.error(f"File not found: {file_path}")
+        return
+
     # Extract the genre, film_name, and film_year from the input file path
     parts = file_path.split(os.sep)
     genre = parts[-3]
@@ -145,7 +149,16 @@ def process_file(file_path):
     logging.info(f"Extracted info - film_name: '{film_name}', film_year: '{film_year}'")
 
     # Read the CSV file into a DataFrame
-    df = pd.read_csv(file_path)
+    try:
+        df = pd.read_csv(file_path)
+    except Exception as e:
+        logging.error(f"Error reading CSV file: {e}")
+        return
+
+    # Check if 'time_midpoint' column exists, if not, create it
+    if 'time_midpoint' not in df.columns:
+        logging.error("Column 'time_midpoint' not found in DataFrame")
+        return
 
     # Normalize the time series data
     success = timeseries_norm(df, df_col_list=['vader', 'textblob', 'llama3'], sma_per=10)
@@ -168,15 +181,18 @@ def process_file(file_path):
 
 def crawl_and_process(input_dir):
     """Crawl through the directory and process each file."""
-    file_no = 0
+    file_list = []
     for root, dirs, files in os.walk(input_dir):
-        files_sorted = sorted(files)
-        for file in files_sorted:
-            if file.endswith("_clean_sentiment_transcript.csv"):
-                file_path = os.path.join(root, file)
-                logging.info(f"\n\nPROCESSING: file #{file_no}: {file}")
-                process_file(file_path)
-                file_no += 1
+        for file in files:
+            if file.endswith("_description_sentiment_transcript.csv"):
+                file_list.append(os.path.join(root, file))
+    
+    # Sort the files list
+    file_list.sort()
+
+    for file_path in file_list:
+        logging.info(f"\n\nPROCESSING FILE: {file_path}")
+        process_file(file_path)
 
 if __name__ == "__main__":
     crawl_and_process(INPUT_ROOT_DIRECTORY)

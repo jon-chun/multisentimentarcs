@@ -9,9 +9,11 @@ import seaborn as sns
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from textblob import TextBlob
 from tqdm import tqdm
+# Assume that 'ollama' is the client module for the specialized LLM model
+import ollama
 
 # Constants
-PLOT_TYPE = "videos"  # "videos" or "transcripts"
+PLOT_TYPE = "transcripts"  # "videos" or "transcripts"
 
 MAX_CALL_OLLAMA = 3
 MAX_WORKERS = 10  # Adjust based on the optimal number of concurrent requests supported by the API
@@ -127,14 +129,10 @@ def plot_kde(df=None, df_col_list=['vader_norm', 'textblob_norm', 'llama3_norm']
     except Exception as e:
         logging.error(f"Error plotting KDE: {e}")
 
-def process_single_file(file_path):
+def process_file(file_path):
     """Process the given file and generate required output files."""
     logging.info(f"Processing file: {file_path}")
     
-    if not os.path.exists(file_path):
-        logging.error(f"File not found: {file_path}")
-        return
-
     # Extract the genre, film_name, and film_year from the input file path
     parts = file_path.split(os.sep)
     genre = parts[-3]
@@ -147,11 +145,7 @@ def process_single_file(file_path):
     logging.info(f"Extracted info - film_name: '{film_name}', film_year: '{film_year}'")
 
     # Read the CSV file into a DataFrame
-    try:
-        df = pd.read_csv(file_path)
-    except Exception as e:
-        logging.error(f"Error reading CSV file: {e}")
-        return
+    df = pd.read_csv(file_path)
 
     # Normalize the time series data
     success = timeseries_norm(df, df_col_list=['vader', 'textblob', 'llama3'], sma_per=10)
@@ -172,11 +166,17 @@ def process_single_file(file_path):
         # Generate and save the KDE plot
         plot_kde(df, df_col_list=['vader_norm', 'textblob_norm', 'llama3_norm'], film_name=film_name, film_year=film_year, output_dir=output_dir)
 
+def crawl_and_process(input_dir):
+    """Crawl through the directory and process each file."""
+    file_no = 0
+    for root, dirs, files in os.walk(input_dir):
+        files_sorted = sorted(files)
+        for file in files_sorted:
+            if file.endswith("_clean_sentiment_transcript.csv"):
+                file_path = os.path.join(root, file)
+                logging.info(f"\n\nPROCESSING: file #{file_no}: {file}")
+                process_file(file_path)
+                file_no += 1
+
 if __name__ == "__main__":
-    # Provide the path to the single CSV file based on PLOT_TYPE
-    if PLOT_TYPE == "videos":
-        input_file_path = "../data/keyframes_sentiments/comedy/gentlemen_prefer_blonds_1953_description/gentlemen_prefer_blondes_1953_description_sentiment_transcript.csv"
-    else:
-        input_file_path = "../data/transcripts_sentiments/comedy/gentlemen_prefer_blonds_1953_description/gentlemen_prefer_blondes_1953_description_sentiment_transcript.csv"
-        
-    process_single_file(input_file_path)
+    crawl_and_process(INPUT_ROOT_DIRECTORY)

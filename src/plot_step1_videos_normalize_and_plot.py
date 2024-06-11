@@ -70,10 +70,10 @@ def timeseries_norm(df, df_col_list=['vader', 'textblob', 'llama3'], sma_per=10)
             # Compute SMA on normalized data with min_periods adjusted
             smoothed_col = pd.Series(normalized_col).rolling(window=window_size, min_periods=window_size//2).mean()
             # Check for NaN values and fill them
-            smoothed_col = smoothed_col.fillna(method='bfill').fillna(method='ffill')
+            smoothed_col = smoothed_col.bfill().ffill()
             # Apply smoothing using spline
-            spline = UnivariateSpline(df['time_midpoint'], smoothed_col, s=1)
-            fitted_values = spline(df['time_midpoint'])
+            spline = UnivariateSpline(range(len(smoothed_col)), smoothed_col, s=1)
+            fitted_values = spline(range(len(smoothed_col)))
             new_col_name = f"{col}_norm"
             df[new_col_name] = fitted_values
         return True
@@ -88,10 +88,10 @@ def plot_sentiment_sma(df, df_cols_list=['vader_norm', 'textblob_norm', 'llama3_
         plt.figure(figsize=(12, 6))
         for col in df_cols_list:
             if col in df.columns:
-                sns.lineplot(data=df, x='time_midpoint', y=col, label=col)
-                plt.scatter(df['time_midpoint'], df[col], alpha=0.5, label=f'{col} Values')
+                sns.lineplot(x=df.index, y=df[col], label=col)
+                plt.scatter(df.index, df[col], alpha=0.5, label=f'{col} Values')
         plt.title(f'Sentiment Analysis for {film_name} ({film_year})')
-        plt.xlabel('Time (seconds)')
+        plt.xlabel('Index')
         plt.ylabel('Sentiment')
         plt.legend()
         plt.grid(True)
@@ -127,7 +127,7 @@ def plot_kde(df=None, df_col_list=['vader_norm', 'textblob_norm', 'llama3_norm']
     except Exception as e:
         logging.error(f"Error plotting KDE: {e}")
 
-def process_single_file(file_path):
+def process_file(file_path):
     """Process the given file and generate required output files."""
     logging.info(f"Processing file: {file_path}")
     
@@ -172,11 +172,20 @@ def process_single_file(file_path):
         # Generate and save the KDE plot
         plot_kde(df, df_col_list=['vader_norm', 'textblob_norm', 'llama3_norm'], film_name=film_name, film_year=film_year, output_dir=output_dir)
 
+def crawl_and_process(input_dir):
+    """Crawl through the directory and process each file."""
+    file_list = []
+    for root, dirs, files in os.walk(input_dir):
+        for file in files:
+            if file.endswith("_description_sentiment_transcript.csv"):
+                file_list.append(os.path.join(root, file))
+    
+    # Sort the files list
+    file_list.sort()
+
+    for file_path in file_list:
+        logging.info(f"\n\nPROCESSING FILE: {file_path}")
+        process_file(file_path)
+
 if __name__ == "__main__":
-    # Provide the path to the single CSV file based on PLOT_TYPE
-    if PLOT_TYPE == "videos":
-        input_file_path = "../data/keyframes_sentiments/comedy/gentlemen_prefer_blonds_1953_description/gentlemen_prefer_blondes_1953_description_sentiment_transcript.csv"
-    else:
-        input_file_path = "../data/transcripts_sentiments/comedy/gentlemen_prefer_blonds_1953_description/gentlemen_prefer_blondes_1953_description_sentiment_transcript.csv"
-        
-    process_single_file(input_file_path)
+    crawl_and_process(INPUT_ROOT_DIRECTORY)
