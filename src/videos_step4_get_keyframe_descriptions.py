@@ -201,7 +201,9 @@ def main() -> None:
     """Main function to initiate the processing of keyframes."""
     overall_start_time = time.time()
     leaf_dirs = find_leaf_directories(ROOT_INPUT_DIRECTORY)
-    while leaf_dirs:
+    prev_leaf_dirs = None  # Track previous state of leaf_dirs
+    while leaf_dirs and leaf_dirs != prev_leaf_dirs:
+        prev_leaf_dirs = leaf_dirs  # Update the previous state
         process_keyframes(leaf_dirs)
         leaf_dirs = find_leaf_directories(ROOT_INPUT_DIRECTORY)
         log_memory_usage()
