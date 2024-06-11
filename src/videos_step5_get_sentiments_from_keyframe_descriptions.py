@@ -1,133 +1,145 @@
 import os
+import pandas as pd
 import logging
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from textblob import TextBlob
+from tqdm import tqdm
+# Assume that 'ollama' is the client module for the specialized LLM model
 import ollama
-from datetime import datetime
 
 # Constants
-MAX_CALL_OLLAMA = 5
-ROOT_INPUT_DIRECTORY = "../data/stills"
-ROOT_OUTPUT_DIRECTORY = "../data/stills_sentiments"
+MAX_CALL_OLLAMA = 3
+MAX_WORKERS = 10  # Adjust based on the optimal number of concurrent requests supported by the API
 
-MIN_DESCRIPTION_LEN = 5
+# Initialize sentiment analyzers
+vader_analyzer = SentimentIntensityAnalyzer()
 
-# Set up logging to both terminal and the generated log file
-current_time = datetime.now().strftime("%Y%m%d_%H%M")
-log_file = os.path.join("..", "data", f"keyframe_sentiment_analysis_{current_time}.log")
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s',
-                    handlers=[
-                        logging.FileHandler(log_file),
-                        logging.StreamHandler()
-                    ])
+# Input and output root directories
+INPUT_ROOT_DIRECTORY = "../data/keyframes_descriptions"
+OUTPUT_ROOT_DIRECTORY = "../data/keyframes_sentiments"
 
-def find_leaf_directories(base_path):
-    """Find all terminal leaf directories within the base path."""
-    leaf_dirs = []
-    for root, dirs, files in os.walk(base_path):
-        if not dirs:  # No subdirectories, it's a leaf
-            leaf_dirs.append(root)
-    logging.info(f"Leaf directories found: {leaf_dirs}")
-    return leaf_dirs
+# Setup logging
+logging.basicConfig(level=logging.INFO)
 
-def get_image_sentiment_description(image_path, frame_number):
+def analyze_sentiments(text):
+    # VADER sentiment analysis
+    vader_score = vader_analyzer.polarity_scores(text)['compound']
+    
+    # TextBlob sentiment analysis
+    textblob_score = TextBlob(text).sentiment.polarity
+    
+    return vader_score, textblob_score
+
+def get_sentiment_ollama(text: str) -> float:
     """
-    Describe the sentiment or emotions evoked by film-maker elements in a movie still image.
+    Perform sentiment analysis on a text string using a specialized LLM model.
 
     Parameters:
-        image_path (str): The path to the image file.
-        frame_number (int): The frame number being processed.
+        text (str): The text string for sentiment analysis.
 
     Returns:
-        float: The description of the image sentiment as a float, or 0.0 if unsuccessful.
+        float: The sentiment value as a float between -1.0 and 1.0, or 0.0 if unsuccessful.
     """
-    if not os.path.exists(image_path):
-        logging.error(f"Image file does not exist: {image_path}")
-        image_sentiment_text_description = "This text has a neutral sentimental"
-        return image_sentiment_text_description
-
     for attempt in range(1, MAX_CALL_OLLAMA + 1):
-        print(f"Processing frame #{frame_number}, attempt #{attempt}")
         try:
-            logging.info(f"Attempt {attempt}: Sending image to Ollama for sentiment analysis: {image_path}")
-
+            logging.info(f"Attempt {attempt}: Sending text to Ollama for sentiment analysis")
 
             res = ollama.chat(
-                model="llava-llama3",
+                model="llama3sentiment",
                 messages=[
                     {
                         'role': 'user',
-                        'content': 'Describe this movie still and the sentiment or emotions evoked by film-maker elements including Facial Expression, Camera Angle, Lighting, Framing and Composition, Setting and Background, Color, Body Language and Gestures, Props and Costumes, Depth of Field, Character Positioning and Interaction, Visual Effects and Post-Processing.',
-                        'images': [
-                            image_path
-                        ],
-                        'temperature': 0.5,  # https://community.openai.com/t/cheat-sheet-mastering-temperature-and-top-p-in-chatgpt-api/172683
-                        'top_p': 0.5  # Adjust this value as needed
+                        'content': f'Give the sentiment polarity float value anywhere between -1.0 to 1.0 for: {text}'
                     }
-                ]
+                ],
+                options={
+                    'temperature': 0.3, 
+                    'top_p': 0.5
+                }
             )
 
             if 'message' in res and 'content' in res['message']:
-                image_sentiment_text_description = res['message']['content']
-                if len(image_sentiment_text_description) < MIN_DESCRIPTION_LEN:
-                    image_sentiment_text_description = "This text has a neutral sentimental"
-                print(f"  image_sentiment_text_description:\n{image_sentiment_text_description}\n\n")
-                return image_sentiment_text_description
-            
+                text_sentiment_float_str = res['message']['content'].strip()
+                logging.info(f'Text sentiment float string: {text_sentiment_float_str}')
+                try:
+                    text_sentiment_float = float(text_sentiment_float_str)
+                    logging.info("Received sentiment analysis response and successfully converted to float")
+                    return text_sentiment_float
+                except ValueError:
+                    logging.warning(f"Attempt {attempt}: Could not convert response to float: {text_sentiment_float_str}")
             else:
-                image_sentiment_text_description = "This text has a neutral sentimental"
                 logging.error(f"Attempt {attempt}: Unexpected API response format: {res}")
 
         except Exception as e:
-            logging.error(f"Attempt {attempt}: Error during sentiment analysis for image {image_path}: {e}")
+            logging.error(f"Attempt {attempt}: Error during sentiment analysis for text: {e}")
 
-    logging.error(f"All {MAX_CALL_OLLAMA} attempts failed for image {image_path}. Returning 0.0")
-    image_sentiment_text_description = "This text has a neutral sentimental"
-    return image_sentiment_text_description
+    logging.error(f"All {MAX_CALL_OLLAMA} attempts failed for text: {text}. Returning 0.0")
+    return 0.0
 
+def process_film(genre, film_name, film_year, file_paths):
+    # Output file path
+    output_subdir = os.path.join(OUTPUT_ROOT_DIRECTORY, genre, f"{film_name}_{film_year}")
+    os.makedirs(output_subdir, exist_ok=True)
+    output_file_path = os.path.join(output_subdir, f"{film_name}_{film_year}_sentiment_transcript.csv")
+    
+    # Check if output file already exists
+    if os.path.exists(output_file_path):
+        logging.info(f"Output file {output_file_path} already exists. Skipping...")
+        return
 
-def process_keyframes(leaf_dirs):
-    """Process all keyframe images in the leaf directories."""
-    frame_number = 1
-    leaf_sorted_dirs = sorted(leaf_dirs)
-    for leaf_dir in leaf_sorted_dirs:
-        keyframes = [f for f in os.listdir(leaf_dir) if os.path.isfile(os.path.join(leaf_dir, f))]
-        keyframes_sorted = sorted(keyframes)
-        keyframes_total = len(keyframes_sorted)
-        for keyframe_index, keyframe in enumerate(keyframes_sorted):
-            # Check if the output file already exists
-            relative_path = os.path.relpath(leaf_dir, ROOT_INPUT_DIRECTORY)
-            output_dir = os.path.join(ROOT_OUTPUT_DIRECTORY, relative_path)
-            output_file = os.path.join(output_dir, f"{os.path.splitext(keyframe)[0]}_description.txt")
-            if os.path.exists(output_file):
-                logging.info(f"Skipping {keyframe} as description already exists at {output_file}")
-                continue
+    # Combine texts from all files into one DataFrame
+    all_texts = []
+    for file_path in file_paths:
+        with open(file_path, 'r') as file:
+            lines = file.readlines()
+        # Extract scene number from the filename
+        scene_number = int(os.path.basename(file_path).split('_')[0].replace('scene', ''))
+        # Concatenate all lines into one single string
+        concatenated_text = " ".join([line.strip() for line in lines if line.strip()])
+        all_texts.append((scene_number, concatenated_text))
 
-            print(f"  PROCESSING #{keyframe_index}/{keyframes_total}...")
-            keyframe_path = os.path.join(leaf_dir, keyframe)
-            description = get_image_sentiment_description(keyframe_path, frame_number)
-            save_description(leaf_dir, keyframe, description)
-            frame_number += 1
+    # Sort by scene number
+    all_texts.sort(key=lambda x: x[0])
+    data = {'text': [text for _, text in all_texts]}
+    df = pd.DataFrame(data)
+    
+    # Add 'vader' and 'textblob' columns
+    df['vader'], df['textblob'] = zip(*df['text'].apply(lambda text: analyze_sentiments(text)))
 
+    # Create a thread pool for concurrent requests
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        # Use tqdm to monitor progress
+        future_to_text = {executor.submit(get_sentiment_ollama, text): text for text in df['text']}
+        df['llama3'] = [future.result() for future in tqdm(as_completed(future_to_text), total=len(future_to_text), desc="Ollama Sentiment Analysis")]
+    
+    # Write the DataFrame to the output path
+    df.to_csv(output_file_path, index=False)
 
-def save_description(leaf_dir, keyframe, description):
-    """Save the sentiment description to the corresponding output directory."""
-    relative_path = os.path.relpath(leaf_dir, ROOT_INPUT_DIRECTORY)
-    output_dir = os.path.join(ROOT_OUTPUT_DIRECTORY, relative_path)
-    os.makedirs(output_dir, exist_ok=True)
-
-    output_file = os.path.join(output_dir, f"{os.path.splitext(keyframe)[0]}_description.txt")
-    with open(output_file, 'w') as f:
-        f.write(str(description))
-
-    logging.info(f"Saved description for {keyframe} at {output_file}")
-
-def main():
-    """Main function to initiate the processing of keyframes."""
-    leaf_dirs = find_leaf_directories(ROOT_INPUT_DIRECTORY)
-    leaf_dirs.remove('../data/stills/deleted')
-    print(f'leaf_dirs: {leaf_dirs}')
-    process_keyframes(leaf_dirs)
-    logging.info("Sentiment analysis for keyframes completed.")
+def crawl_and_process(input_dir):
+    film_files = {}
+    for root, dirs, files in os.walk(input_dir):
+        for file in files:
+            if file.startswith('scene') and file.endswith('_description.txt'):
+                # Extract the relative path from the input directory to the current file
+                relative_path = os.path.relpath(root, INPUT_ROOT_DIRECTORY)
+                # The genre is the first part of this relative path
+                genre = relative_path.split(os.sep)[0]
+                
+                # Extract file_name and file_year from the file name
+                parts = file.split('_')
+                file_name = '_'.join(parts[1:-1])
+                file_year = parts[-1].split('.')[0]
+                
+                # Aggregate files for each film
+                film_key = (genre, file_name, file_year)
+                if film_key not in film_files:
+                    film_files[film_key] = []
+                film_files[film_key].append(os.path.join(root, file))
+        
+    # Process each film
+    for (genre, file_name, file_year), file_paths in film_files.items():
+        process_film(genre, file_name, file_year, file_paths)
 
 if __name__ == "__main__":
-    main()
+    crawl_and_process(INPUT_ROOT_DIRECTORY)

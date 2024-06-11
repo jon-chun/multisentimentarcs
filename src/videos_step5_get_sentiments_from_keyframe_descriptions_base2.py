@@ -5,8 +5,8 @@ from datetime import datetime
 
 # Constants
 MAX_CALL_OLLAMA = 5
-ROOT_INPUT_DIRECTORY = "../data/keyframes_descriptions"
-ROOT_OUTPUT_DIRECTORY = "../data/keyframes_sentiments"
+ROOT_INPUT_DIRECTORY = "../data/stills"
+ROOT_OUTPUT_DIRECTORY = "../data/stills_sentiments"
 
 MIN_DESCRIPTION_LEN = 5
 
@@ -94,20 +94,11 @@ def process_keyframes(leaf_dirs):
         keyframes_sorted = sorted(keyframes)
         keyframes_total = len(keyframes_sorted)
         for keyframe_index, keyframe in enumerate(keyframes_sorted):
-            # Check if the output file already exists
-            relative_path = os.path.relpath(leaf_dir, ROOT_INPUT_DIRECTORY)
-            output_dir = os.path.join(ROOT_OUTPUT_DIRECTORY, relative_path)
-            output_file = os.path.join(output_dir, f"{os.path.splitext(keyframe)[0]}_description.txt")
-            if os.path.exists(output_file):
-                logging.info(f"Skipping {keyframe} as description already exists at {output_file}")
-                continue
-
             print(f"  PROCESSING #{keyframe_index}/{keyframes_total}...")
             keyframe_path = os.path.join(leaf_dir, keyframe)
             description = get_image_sentiment_description(keyframe_path, frame_number)
             save_description(leaf_dir, keyframe, description)
             frame_number += 1
-
 
 def save_description(leaf_dir, keyframe, description):
     """Save the sentiment description to the corresponding output directory."""
@@ -124,10 +115,9 @@ def save_description(leaf_dir, keyframe, description):
 def main():
     """Main function to initiate the processing of keyframes."""
     leaf_dirs = find_leaf_directories(ROOT_INPUT_DIRECTORY)
-    # leaf_dirs.remove('../data/stills/deleted')
-    leaf_sorted_dirs = sorted(leaf_dirs)
-    print(f'leaf_dirs: {leaf_sorted_dirs}\n\n\n')
-    process_keyframes(leaf_sorted_dirs)
+    leaf_dirs.remove('../data/stills/deleted')
+    print(f'leaf_dirs: {leaf_dirs}')
+    process_keyframes(leaf_dirs)
     logging.info("Sentiment analysis for keyframes completed.")
 
 if __name__ == "__main__":

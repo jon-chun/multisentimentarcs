@@ -13,7 +13,7 @@ from tqdm import tqdm
 import ollama
 
 # Constants
-PLOT_TYPE = "transcripts"  # "videos" or "transcripts"
+PLOT_TYPE = "videos"  # "videos" or "transcripts"
 
 MAX_CALL_OLLAMA = 3
 MAX_WORKERS = 10  # Adjust based on the optimal number of concurrent requests supported by the API

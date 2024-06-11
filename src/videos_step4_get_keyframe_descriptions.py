@@ -18,7 +18,7 @@ MAX_CALL_OLLAMA = 5
 MAX_WAIT_OLLAMA_API_SEC = 3000  # 50 minutes
 MAX_WAIT_OLLAMA_RESTART_SEC = 60  # 1 minute
 ROOT_INPUT_DIRECTORY = "../data/keyframes"
-ROOT_OUTPUT_DIRECTORY = "../data/keyframes_sentiments"
+ROOT_OUTPUT_DIRECTORY = "../data/keyframes_descriptions"
 MIN_DESCRIPTION_LEN = 5
 
 # Set up logging to both terminal and the generated log file
