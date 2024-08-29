@@ -1,13 +1,7 @@
 # Videos
 data/keyframes/
 data/scenes/
-data/sentiment_keyframes/
-data/sentiment_transcripts/
 data/videos/
-videos/
-video_frames/
-video_pyscenedet/
-video_scenecutex/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
