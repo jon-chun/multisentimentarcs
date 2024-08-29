@@ -24,6 +24,9 @@ significantly advance the field of Digital Humanities by giving non-AI experts a
 engage in human-in-the-loop research around Affective AI and human-AI alignment. Code, results,
 and non-copyrighted data will be available at https://github.com/jon-chun/multisentimentarcs.
 
+| ![Royal Wedding Coherence between Video and Transcript](/data/plots/musical/royal_wedding_1951_coherence_video_transcripts.png) | 
+|:--:| 
+| *Royal Wedding (1951) Video Sentiment Arcs* |
 
 | ![Royal Wedding Video Sentiment Arcs](/data/plots/musical/royal_wedding_1951_sma10_plot.png) | 
 |:--:| 
