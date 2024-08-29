@@ -6,6 +6,7 @@ from scipy import stats
 from dtaidistance import dtw
 from statsmodels.nonparametric.smoothers_lowess import lowess
 from sklearn.preprocessing import MinMaxScaler
+from scipy.stats import pearsonr
 
 def winsorize_series(series, limits=(0.05, 0.05)):
     winsorized = stats.mstats.winsorize(series, limits=limits)
@@ -74,40 +75,59 @@ for col in models_columns + ['mean']:
 # Compute similarity metrics
 euclidean_similarities = []
 dtw_similarities = []
+pearson_correlations = []
 
 for col in models_columns:
     euclidean_similarities.append(1 - normalized_euclidean_distance(sentiment_df[f'{col}_final'], sentiment_df['mean_final']))
     dtw_similarities.append(1 - normalized_dtw_distance(sentiment_df[f'{col}_final'], sentiment_df['mean_final']))
+    correlation, _ = pearsonr(sentiment_df[f'{col}_final'], sentiment_df['mean_final'])
+    pearson_correlations.append(correlation)
 
 euclidean_similarity = np.mean(euclidean_similarities)
 dtw_similarity = np.mean(dtw_similarities)
+pearson_correlation = np.mean(pearson_correlations)
 
 print(f"Euclidean Similarity: {euclidean_similarity:.4f}")
 print(f"DTW Similarity: {dtw_similarity:.4f}")
+print(f"Pearson Correlation: {pearson_correlation:.4f}")
+
+# Save results to CSV
+sentiment_df['normalized_time'] = np.linspace(0, 1, len(sentiment_df))
+output_csv = os.path.join("..", "data", "plots", genre, f"{title_year_str}_coherence_transcript_intermodel.csv")
+sentiment_df.to_csv(output_csv, index=False)
+print(f"Normalized data saved to: {output_csv}")
 
 # Plot the sentiment arcs and save to file
 plt.figure(figsize=(16, 12))
 for col in models_columns:
-    plt.plot(sentiment_df.index, sentiment_df[f'{col}_final'], label=col, linewidth=3)
-plt.plot(sentiment_df.index, sentiment_df['mean_final'], label='Mean', linewidth=4, color='black')
+    plt.plot(sentiment_df['normalized_time'], sentiment_df[f'{col}_final'], label=col, linewidth=3)
+plt.plot(sentiment_df['normalized_time'], sentiment_df['mean_final'], label='Mean', linewidth=4, color='black')
 
 plt.legend(fontsize=24)
-plt.title('Royal Wedding (1951) Video Sentiment Arcs\nOpen Model Coherence', fontsize=32)
-plt.xlabel('Time', fontsize=24)
+plt.title('Royal Wedding (1951) Transcript Sentiment Arcs\nOpen Model Coherence', fontsize=32)
+plt.xlabel('Normalized Time', fontsize=24)
 plt.ylabel('Z-Score Normalized Sentiment', fontsize=24)
 plt.xticks(fontsize=20)
 plt.yticks(fontsize=20)
 
-textstr = f'Euclidean Similarity: {euclidean_similarity:.4f}\nDTW Similarity: {dtw_similarity:.4f}'
+textstr = f'Euclidean Similarity: {euclidean_similarity:.4f}\nDTW Similarity: {dtw_similarity:.4f}\nPearson Correlation: {pearson_correlation:.4f}'
 props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
 plt.text(0.05, 0.95, textstr, transform=plt.gca().transAxes, fontsize=36,
          verticalalignment='top', bbox=props)
 
 plt.tight_layout()
 
+# Add this code after plt.tight_layout() and before plt.savefig()
+
+plt.figtext(0.5, 0.01, "Figure 8: Multimodel Transcript Coherence", ha='center', fontsize=32, fontweight='bold')
+
+# Adjust the bottom margin to make room for the new label
+plt.subplots_adjust(bottom=0.15)
+
+
 output_dir = os.path.join("..", "data", "plots", genre)
 os.makedirs(output_dir, exist_ok=True)
-output_file = os.path.join(output_dir, f"{title_year_str}_intermodel_coherence.png")
+output_file = os.path.join(output_dir, f"{title_year_str}_coherence_transcript_intermodel.png")
 plt.savefig(output_file, dpi=300, bbox_inches='tight')
 print(f"Plot saved to: {output_file}")
 

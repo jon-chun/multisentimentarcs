@@ -151,7 +151,7 @@ try:
 
     common_df['normalized_time'] = np.linspace(0, 1, len(common_df))
 
-    output_csv = os.path.join("..", "data", "plots", genre, f"{title_year_str}_video_transcript_coherence.csv")
+    output_csv = os.path.join("..", "data", "plots", genre, f"{title_year_str}_coherence_video_transcript.csv")
     common_df.to_csv(output_csv, index=False)
     print(f"Normalized data saved to: {output_csv}")
 
@@ -181,16 +181,23 @@ try:
     y_max = max(common_df['video_mean_final'].max(), common_df['transcript_mean_final'].max())
     plt.ylim(y_min - 0.1, y_max + 0.1)  # Add a small padding
 
-    textstr = f'Euclidean Similarity: {euclidean_similarity:.4f}\nDTW Similarity: {dtw_similarity:.4f}\nCorrelation: {correlation:.4f}'
+    textstr = f'Euclidean Similarity: {euclidean_similarity:.4f}\nDTW Similarity: {dtw_similarity:.4f}\nPearson Correlation: {correlation:.4f}'
     props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
     plt.text(0.05, 0.95, textstr, transform=plt.gca().transAxes, fontsize=36,
              verticalalignment='top', bbox=props)
 
     plt.tight_layout()
 
+    # Add this code after plt.tight_layout() and before plt.savefig()
+
+    plt.figtext(0.5, 0.01, "Figure 9: Multimodal Video and Transcript Coherence", ha='center', fontsize=32, fontweight='bold')
+
+    # Adjust the bottom margin to make room for the new label
+    plt.subplots_adjust(bottom=0.15)
+
     output_dir = os.path.join("..", "data", "plots", genre)
     os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, f"{title_year_str}_video_transcript_coherence.png")
+    output_file = os.path.join(output_dir, f"{title_year_str}_coherence_video_transcript.png")
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     print(f"Plot saved to: {output_file}")
 

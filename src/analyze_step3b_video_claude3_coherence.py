@@ -155,7 +155,7 @@ try:
 
     common_df['normalized_time'] = np.linspace(0, 1, len(common_df))
 
-    output_csv = os.path.join("..", "data", "plots", genre, f"{title_year_str}_claude3_open2step_coherence.csv")
+    output_csv = os.path.join("..", "data", "plots", genre, f"{title_year_str}_coherence_claude3_open2step.csv")
     common_df.to_csv(output_csv, index=False)
     print(f"Normalized data saved to: {output_csv}")
 
@@ -185,15 +185,22 @@ try:
     y_max = max(common_df['claude3_final'].max(), common_df['open2step_final'].max())
     plt.ylim(y_min - 0.1, y_max + 0.1)  # Add a small padding
 
-    textstr = f'Euclidean Similarity: {euclidean_similarity:.4f}\nDTW Similarity: {dtw_similarity:.4f}\nCorrelation: {correlation:.4f}'
+    textstr = f'Euclidean Similarity: {euclidean_similarity:.4f}\nDTW Similarity: {dtw_similarity:.4f}\nPearson Correlation: {correlation:.4f}'
     props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
     plt.text(0.05, 0.95, textstr, transform=plt.gca().transAxes, fontsize=36,
              verticalalignment='top', bbox=props)
 
     plt.tight_layout()
 
+    # Add this code after plt.tight_layout() and before plt.savefig()
+
+    plt.figtext(0.5, 0.01, "Figure 10: Open2Step vs. Claude3 Coherence", ha='center', fontsize=32, fontweight='bold')
+
+    # Adjust the bottom margin to make room for the new label
+    plt.subplots_adjust(bottom=0.15)
+
     # Update output plot path
-    output_plot = os.path.join('..', 'data', 'plots_claude3',f'{title_year_str}_open-sota_coherence.png')
+    output_plot = os.path.join('..', 'data', 'plots', genre, f'{title_year_str}_coherence_claude3_open2step.png')
     os.makedirs(os.path.dirname(output_plot), exist_ok=True)
     plt.savefig(output_plot, dpi=300, bbox_inches='tight')
     print(f"Plot saved to: {output_plot}")
